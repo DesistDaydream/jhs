@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/item_left" android:background="@color/white" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="72dp" android:paddingStart="18dp" android:paddingEnd="18dp">
+    <ImageView android:id="@+id/conversation_icon" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_sys_msg" android:layout_centerVertical="true"/>
+    <com.tencent.qcloud.tuicore.component.UnreadCountTextView android:textSize="10sp" android:textColor="#fff" android:gravity="center" android:id="@+id/conversation_unread" android:layout_width="wrap_content" android:layout_height="15dp" android:layout_marginTop="6dp" android:includeFontPadding="false" android:layout_marginStart="30dp"/>
+    <RelativeLayout android:paddingTop="12dp" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toRightOf="@+id/conversation_icon" android:layout_marginStart="12dp">
+        <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="#000000" android:ellipsize="end" android:id="@+id/conversation_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="系统通知" android:singleLine="true"/>
+        <TextView android:textSize="14sp" android:textColor="#b5b5b7" android:ellipsize="end" android:id="@+id/conversation_last_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="48dp" android:singleLine="true" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</RelativeLayout>

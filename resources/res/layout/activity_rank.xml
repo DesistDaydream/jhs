@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:tag="layout/activity_rank_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/llTop" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="0">
+        <com.jihuanshe.ui.widget.RankIndicatorView android:id="@+id/tabBar" android:tag="binding_2" android:layout_width="match_parent" android:layout_height="36dp" android:layout_marginTop="12dp"/>
+    </LinearLayout>
+    <com.vector.view.pager.ViewPager android:id="@+id/rankViewPager" android:tag="binding_3" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/llTop"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/clBar" android:tag="binding_4" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@+id/llTop">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/clDesc" android:paddingLeft="32dp" android:paddingTop="21dp" android:paddingRight="32dp" android:paddingBottom="21dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <com.vector.network.image.NImageView android:id="@+id/niv" android:tag="binding_5" android:layout_width="66dp" android:layout_height="66dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+            <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/tvTitle" android:tag="binding_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginStart="15dp" app:layout_constraintStart_toEndOf="@+id/niv" app:layout_constraintTop_toTopOf="@+id/niv"/>
+            <TextView android:textSize="12sp" android:textColor="@color/black_b5b5b7" android:ellipsize="end" android:tag="binding_7" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:maxLines="2" android:layout_marginStart="15dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@+id/niv" app:layout_constraintTop_toBottomOf="@+id/tvTitle"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="48dp" android:paddingStart="11dp">
+            <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="@color/selector_text_rank" android:gravity="center" android:tag="binding_8" android:paddingLeft="13dp" android:paddingRight="13dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/common_tab_series"/>
+            <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="@color/selector_text_rank" android:gravity="center" android:tag="binding_9" android:paddingLeft="13dp" android:paddingRight="13dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/common_tab_one"/>
+            <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+            <com.jihuanshe.ui.widget.GameFilterBtn android:textSize="12sp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/gameFilter" android:tag="binding_10" android:layout_width="wrap_content" android:layout_height="match_parent" android:drawablePadding="6dp" android:layout_marginEnd="17dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@+id/rarityFilter" app:layout_constraintTop_toTopOf="0"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

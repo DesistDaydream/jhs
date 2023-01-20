@@ -1,0 +1,69 @@
+package e.l.k;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.databinding.Bindable;
+import androidx.databinding.DataBindingUtil;
+import androidx.databinding.ViewDataBinding;
+import com.jihuanshe.R;
+import com.jihuanshe.ui.page.user.CloseAccountActivity;
+
+/* loaded from: classes2.dex */
+public abstract class a0 extends ViewDataBinding {
+    @NonNull
+    public final TextView a;
+    @NonNull
+    public final TextView b;
+    @Bindable
+
+    /* renamed from: c  reason: collision with root package name */
+    public CloseAccountActivity f12244c;
+
+    public a0(Object obj, View view, int i2, TextView textView, TextView textView2) {
+        super(obj, view, i2);
+        this.a = textView;
+        this.b = textView2;
+    }
+
+    public static a0 a(@NonNull View view) {
+        return b(view, DataBindingUtil.getDefaultComponent());
+    }
+
+    @Deprecated
+    public static a0 b(@NonNull View view, @Nullable Object obj) {
+        return (a0) ViewDataBinding.bind(obj, view, R.layout.activity_close_account);
+    }
+
+    @NonNull
+    public static a0 d(@NonNull LayoutInflater layoutInflater) {
+        return g(layoutInflater, DataBindingUtil.getDefaultComponent());
+    }
+
+    @NonNull
+    public static a0 e(@NonNull LayoutInflater layoutInflater, @Nullable ViewGroup viewGroup, boolean z) {
+        return f(layoutInflater, viewGroup, z, DataBindingUtil.getDefaultComponent());
+    }
+
+    @NonNull
+    @Deprecated
+    public static a0 f(@NonNull LayoutInflater layoutInflater, @Nullable ViewGroup viewGroup, boolean z, @Nullable Object obj) {
+        return (a0) ViewDataBinding.inflateInternal(layoutInflater, R.layout.activity_close_account, viewGroup, z, obj);
+    }
+
+    @NonNull
+    @Deprecated
+    public static a0 g(@NonNull LayoutInflater layoutInflater, @Nullable Object obj) {
+        return (a0) ViewDataBinding.inflateInternal(layoutInflater, R.layout.activity_close_account, null, false, obj);
+    }
+
+    @Nullable
+    public CloseAccountActivity c() {
+        return this.f12244c;
+    }
+
+    public abstract void h(@Nullable CloseAccountActivity closeAccountActivity);
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:tag="layout/dialog_share_0" android:background="@drawable/bg_white_top_corner" android:paddingBottom="48dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="14sp" android:textColor="@color/black" android:id="@+id/titleTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="26dp" android:text="@string/share_title" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/pictureLayout" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="19dp" app:layout_constraintEnd_toStartOf="@+id/wxFriendLayout" app:layout_constraintHorizontal_chainStyle="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/titleTv">
+        <ImageView android:layout_width="48dp" android:layout_height="48dp"/>
+        <TextView android:textSize="12sp" android:textColor="@color/black_99999a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/share_save_to_picture"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/wxFriendLayout" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="19dp" app:layout_constraintEnd_toStartOf="@+id/wxCircleLayout" app:layout_constraintStart_toEndOf="@+id/pictureLayout" app:layout_constraintTop_toBottomOf="@+id/titleTv">
+        <ImageView android:layout_width="48dp" android:layout_height="48dp"/>
+        <TextView android:textSize="12sp" android:textColor="@color/black_99999a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/share_wx_friend"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/wxCircleLayout" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="19dp" app:layout_constraintEnd_toStartOf="@+id/qqLayout" app:layout_constraintStart_toEndOf="@+id/wxFriendLayout" app:layout_constraintTop_toBottomOf="@+id/titleTv">
+        <ImageView android:layout_width="48dp" android:layout_height="48dp"/>
+        <TextView android:textSize="12sp" android:textColor="@color/black_99999a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/share_wx_circle"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/qqLayout" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="19dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@+id/wxCircleLayout" app:layout_constraintTop_toBottomOf="@+id/titleTv">
+        <ImageView android:layout_width="48dp" android:layout_height="48dp"/>
+        <TextView android:textSize="12sp" android:textColor="@color/black_99999a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/share_qq"/>
+    </LinearLayout>
+    <TextView android:textSize="14sp" android:textColor="@color/black" android:gravity="center" android:id="@+id/cancelBtn" android:tag="binding_5" android:background="@drawable/bg_big_btn_grey" android:layout_width="240dp" android:layout_height="@dimen/bottom_btn_height" android:layout_marginTop="36dp" android:text="@string/cancel" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/pictureLayout"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

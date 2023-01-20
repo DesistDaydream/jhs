@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/answer1" android:tag="layout/item_answer_0" android:background="@drawable/sel_answer" android:paddingLeft="21dp" android:paddingRight="21dp" android:layout_width="match_parent" android:layout_height="48dp" android:paddingHorizontal="21dp">
+    <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/selector_exam_text" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <TextView android:textSize="12sp" android:textColor="@color/selector_exam_answer_text" android:id="@+id/answerTv1" android:tag="binding_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="19dp"/>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <include android:id="@+id/include_time" layout="@layout/ykfsdk_ykf_chatitem_time"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/chart_to_container" android:background="@drawable/ykfsdk_ykf_receive_msg_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="57dp" android:layout_marginRight="57dp" android:layout_marginBottom="10dp" android:layout_below="@+id/include_time" android:layout_alignParentRight="true">
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/ykfsdk_color_333333" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="15dp" android:text="@string/ykfsdk_ykf_thanks_investigate_title"/>
+        <TextView android:textSize="15sp" android:textColor="?attr/ykfsdk_ykf_theme_color_default" android:layout_gravity="center_horizontal" android:id="@+id/tv_investigate_content" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15dp"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:theme="@style/ykfsdk_toolbar_theme" android:id="@+id/toolbar_question" android:background="@color/ykfsdk_all_white" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:navigationIcon="?attr/homeAsUpIndicator" app:title="@string/ykfsdk_chat_question" app:titleTextColor="@color/ykfsdk_all_black"/>
+    <View android:background="@color/ykfsdk_color_ebebeb" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rl_refresh" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

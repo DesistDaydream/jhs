@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.m7.imkfsdk.view.AlignTextView android:textSize="12sp" android:textColor="@drawable/ykfsdk_kf_selector_firstmine_text_color" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_title" android:background="@drawable/ykfsdk_kf_selector_select_my_labels" android:paddingLeft="10dp" android:paddingTop="8dp" android:paddingRight="10dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="宅男" android:maxEms="50"/>
+</RelativeLayout>

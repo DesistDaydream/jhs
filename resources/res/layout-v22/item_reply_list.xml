@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:tag="layout/item_reply_list_0" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/llTop" android:layout_width="match_parent" android:layout_height="48dp" app:layout_constraintTop_toTopOf="0">
+        <com.vector.network.image.NImageView android:id="@+id/avatarIv" android:tag="binding_1" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginStart="24dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/updateTitle"/>
+        <TextView android:textSize="12sp" android:textColor="@color/black" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginStart="9dp"/>
+        <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+        <ImageView android:tag="binding_3" android:background="@drawable/bg_more_shape" android:padding="2dp" android:layout_width="21dp" android:layout_height="21dp" android:src="@drawable/svg_more_a" android:layout_marginEnd="22dp"/>
+    </LinearLayout>
+    <TextView android:textSize="14sp" android:textColor="@color/black" android:id="@+id/tvContent" android:tag="binding_4" android:paddingLeft="24dp" android:paddingRight="24dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:paddingHorizontal="24dp" app:layout_constrainedWidth="true" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHorizontal_bias="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/llTop"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/llBot" android:paddingLeft="24dp" android:paddingRight="24dp" android:layout_width="match_parent" android:layout_height="48dp" android:paddingHorizontal="24dp" app:layout_constraintTop_toBottomOf="@+id/tvContent">
+        <TextView android:textSize="12sp" android:textColor="@color/black_b5b5b7" android:id="@+id/tvDate" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@+id/ratingBar"/>
+        <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+        <TextView android:textSize="12sp" android:textColor="@color/black_b5b5b7" android:gravity="center" android:id="@+id/tvLikeNum" android:tag="binding_6" android:layout_width="wrap_content" android:layout_height="match_parent" android:drawablePadding="5dp" app:layout_constraintTop_toBottomOf="@+id/ratingBar"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

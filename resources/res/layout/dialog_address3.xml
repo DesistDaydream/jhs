@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:tag="layout/dialog_address3_0" android:background="@drawable/bg_white_top_corner" android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_gravity="end" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:src="@drawable/svg_close" android:layout_marginEnd="26dp"/>
+    <TextView android:textSize="14sp" android:textColor="@color/black_333333" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:text="选择地区" android:paddingStart="37dp"/>
+    <com.xres.address_selector.widget.address_selector.AddressSelectorView3 android:id="@+id/selectView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

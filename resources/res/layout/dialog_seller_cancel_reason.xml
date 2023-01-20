@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:tag="layout/dialog_seller_cancel_reason_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="@drawable/bg_white_top_corner" android:layout_width="match_parent" android:layout_height="20dp"/>
+    <TextView android:textSize="12sp" android:textColor="@color/black_b5b5b7" android:gravity="center" android:background="@color/white" android:layout_width="match_parent" android:layout_height="30dp" android:text="@string/common_send_cancel_order"/>
+    <TextView android:textSize="14sp" android:textColor="@color/black_333333" android:gravity="center" android:tag="binding_1" android:background="@drawable/ripple_default" android:layout_width="match_parent" android:layout_height="56dp" android:text="@string/reason_seller_cancel_1"/>
+    <TextView android:textSize="14sp" android:textColor="@color/black_333333" android:gravity="center" android:tag="binding_2" android:background="@drawable/ripple_default" android:layout_width="match_parent" android:layout_height="56dp" android:text="@string/reason_seller_cancel_2"/>
+    <TextView android:textSize="14sp" android:textColor="@color/black_333333" android:gravity="center" android:tag="binding_3" android:background="@drawable/ripple_default" android:layout_width="match_parent" android:layout_height="56dp" android:text="@string/reason_seller_cancel_3"/>
+    <TextView android:textSize="14sp" android:textColor="@color/black_333333" android:gravity="center" android:tag="binding_4" android:background="@drawable/ripple_default" android:layout_width="match_parent" android:layout_height="56dp" android:text="@string/reason_seller_cancel_4"/>
+    <TextView android:textSize="14sp" android:textColor="@color/black_333333" android:gravity="center" android:tag="binding_5" android:background="@drawable/ripple_default" android:layout_width="match_parent" android:layout_height="56dp" android:text="@string/reason_seller_cancel_5"/>
+</LinearLayout>

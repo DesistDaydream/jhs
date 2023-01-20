@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="4dp">
+    <include android:id="@+id/include_time" layout="@layout/ykfsdk_ykf_chatitem_time"/>
+    <RelativeLayout android:id="@+id/chart_from_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="48dp" android:layout_marginBottom="10dp" android:layout_below="@+id/include_time" android:layout_alignParentLeft="true">
+        <com.m7.imkfsdk.view.RoundCornerImageView android:id="@+id/chatting_avatar_iv" android:background="@drawable/ykfsdk_bg_avatar" android:layout_width="46dp" android:layout_height="46dp" android:layout_marginLeft="8dp" android:src="@drawable/ykfsdk_kf_head_default_robot" android:scaleType="fitXY"/>
+        <TextView android:textSize="10sp" android:textColor="@color/ykfsdk_all_black" android:id="@+id/chatfrom_tv_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="姓名" android:layout_toRightOf="@+id/chatting_avatar_iv"/>
+        <RelativeLayout android:background="@drawable/ykfsdk_ykf_receive_msg_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.23dp" android:layout_toRightOf="@+id/chatting_avatar_iv" android:layout_below="@+id/chatfrom_tv_name" android:layout_centerVertical="true">
+            <ImageView android:id="@+id/chat_to_video_icon" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/ykfsdk_kf_chatrow_video" android:layout_centerVertical="true"/>
+            <TextView android:textSize="16sp" android:gravity="center_vertical" android:id="@+id/chat_content_tv" android:paddingLeft="8dp" android:paddingTop="10dp" android:paddingRight="8dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="@string/ykfsdk_ykf_video_send" android:layout_toRightOf="@+id/chat_to_video_icon" android:layout_centerVertical="true" android:lineSpacingMultiplier="1.1"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <include layout="@layout/ykfsdk_layout_chat_withdraw"/>
+</RelativeLayout>

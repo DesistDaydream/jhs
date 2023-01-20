@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/ykfsdk_bg_bottom_sheet" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+    <TextView android:textSize="14sp" android:textColor="@color/ykfsdk_color_666666" android:gravity="center" android:id="@+id/tv_num_pop_num" android:layout_width="match_parent" android:layout_height="60dp"/>
+    <View android:background="@color/ykfsdk_color_ededed" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <TextView android:textSize="16sp" android:textColor="@color/ykfsdk_color_151515" android:gravity="center" android:id="@+id/tv_callnum" android:layout_width="match_parent" android:layout_height="60dp" android:text="@string/ykfsdk_ykf_call"/>
+    <View android:background="@color/ykfsdk_color_ededed" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <TextView android:textSize="16sp" android:textColor="@color/ykfsdk_color_151515" android:gravity="center" android:id="@+id/tv_copynum" android:layout_width="match_parent" android:layout_height="60dp" android:text="@string/ykfsdk_ykf_copy_num"/>
+    <View android:background="@color/ykfsdk_color_f5f5f5" android:layout_width="match_parent" android:layout_height="10dp"/>
+    <TextView android:textSize="16sp" android:textColor="@color/ykfsdk_color_3c3c3c" android:gravity="center" android:id="@+id/tv_backnum" android:layout_width="match_parent" android:layout_height="60dp" android:text="@string/ykfsdk_cancel"/>
+</LinearLayout>

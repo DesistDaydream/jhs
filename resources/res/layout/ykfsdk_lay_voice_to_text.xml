@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/ykfsdk_bg_voice_to_text" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="38dp">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_text_ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp">
+            <TextView android:textSize="14sp" android:textColor="@color/ykfsdk_textcolor" android:id="@+id/tv_vototx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ykfsdk_ykf_voice_to_text" android:layout_centerVertical="true"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="14dp" android:layout_height="14dp" android:src="@drawable/ykfsdk_kf_ic_voiceok"/>
+                <TextView android:textSize="12sp" android:textColor="@color/ykfsdk_grey" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:text="@string/ykfsdk_ykf_convert_complete"/>
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/rl_pb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="40dp" android:layout_centerVertical="true">
+            <ProgressBar android:id="@+id/pb_voice_text" android:layout_width="20dp" android:layout_height="20dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

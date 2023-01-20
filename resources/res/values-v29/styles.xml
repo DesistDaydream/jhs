@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Jihuanshe" parent="@style/Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:textColor">@color/black_333333</item>
+        <item name="android:letterSpacing">0.03</item>
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="checkboxStyle">@style/CheckBoxStyle</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorPrimary">@color/common_color_1</item>
+        <item name="colorPrimaryVariant">@color/common_color_2</item>
+        <item name="colorSecondary">@color/common_color_1</item>
+        <item name="colorSecondaryVariant">@color/common_color_2</item>
+        <item name="radioButtonStyle">@style/RadioButtonStyle</item>
+        <item name="switchStyle">@style/SwitchStyle</item>
+    </style>
+</resources>

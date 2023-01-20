@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:background="@color/ykfsdk_all_white" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/ykfsdk_ykf_xbot_form_title_size" android:textStyle="bold" android:textColor="#151515" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:text="你好"/>
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/ykfsdk_ykf_required" android:id="@+id/tv_required" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:text="*" android:layout_toRightOf="@+id/tv_title"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_xbot_file" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_below="@+id/tv_title"/>
+        <RelativeLayout android:id="@+id/rl_xbot_form_addfile" android:background="@drawable/ykfsdk_kf_bg_xbot_tiem" android:layout_width="match_parent" android:layout_height="@dimen/ykfsdk_ykf_xbot_form_item_height" android:layout_marginLeft="10dp" android:layout_marginTop="6dp" android:layout_marginRight="10dp" android:layout_below="@+id/ll_xbot_file">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ykfsdk_kf_ic_upfile"/>
+                <TextView android:textSize="15sp" android:textColor="@color/ykfsdk_color_333333" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:text="@string/ykfsdk_ykf_xbot_form_up_file"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

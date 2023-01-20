@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/sl_fast_btn" android:background="@drawable/ykfsdk_bg_quickitem" android:layout_width="75dp" android:layout_height="90dp">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_fast_btn" android:layout_width="40dp" android:layout_height="40dp" android:scaleType="fitXY"/>
+        <TextView android:textSize="12sp" android:textColor="@color/ykfsdk_color_151515" android:layout_gravity="center_horizontal" android:id="@+id/tv_fast_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="快速按钮" android:maxEms="5"/>
+    </LinearLayout>
+</RelativeLayout>

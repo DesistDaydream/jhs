@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:tag="layout/view_filter_bar_selling_0" android:background="@drawable/bg_filter_bar" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="end" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="40dp">
+            <ImageView android:id="@+id/searchSellIv" android:tag="binding_1" android:paddingTop="0dp" android:paddingBottom="0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/svg_search" android:paddingStart="10dp" android:paddingEnd="20dp" app:tint="@color/black_99999a"/>
+            <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+            <LinearLayout android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginEnd="27dp">
+                <TextView android:textSize="12sp" android:textColor="@color/black" android:gravity="center" android:id="@+id/sorting" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+                <ImageView android:layout_gravity="center_vertical" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="5dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginEnd="15dp">
+                <TextView android:textSize="12sp" android:textColor="@color/black" android:gravity="center" android:layout_gravity="right" android:id="@+id/rarity" android:tag="binding_6" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+                <ImageView android:layout_gravity="center_vertical" android:tag="binding_7" android:layout_width="17dp" android:layout_height="17dp" android:src="@drawable/svg_rarity" android:layout_marginStart="5dp"/>
+            </LinearLayout>
+            <ImageView android:layout_gravity="center" android:id="@+id/searchIv" android:tag="binding_8" android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/svg_search" android:layout_marginEnd="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:tag="binding_9" android:background="@drawable/bg_search_left_bar" android:layout_width="match_parent" android:layout_height="30dp" android:layout_marginTop="3dp" android:paddingStart="14dp" android:paddingEnd="14dp">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/ic_search"/>
+        <EditText android:textSize="14sp" android:textColor="@color/black_333333" android:id="@+id/edit" android:tag="binding_10" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:singleLine="true" android:imeOptions="actionSearch" android:textCursorDrawable="@null" android:layout_marginStart="10dp"/>
+    </LinearLayout>
+    <FrameLayout android:tag="binding_11" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_marginRight="18dp" android:layout_marginHorizontal="18dp">
+        <com.jihuanshe.ui.widget.FlexLayout android:tag="binding_12" android:paddingTop="10dp" android:paddingBottom="18dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:alignContent="0" app:flexDirection="0" app:flexWrap="1"/>
+    </FrameLayout>
+    <FrameLayout android:tag="binding_13" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerView" android:tag="binding_14" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </FrameLayout>
+</LinearLayout>

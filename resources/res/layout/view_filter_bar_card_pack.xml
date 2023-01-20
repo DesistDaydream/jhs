@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="end|center_vertical" android:orientation="horizontal" android:id="@+id/llBar" android:tag="layout/view_filter_bar_card_pack_0" android:background="@drawable/bg_tab_search" android:layout_width="match_parent" android:layout_height="48dp" android:paddingStart="14dp" android:paddingEnd="24dp">
+    <com.jihuanshe.ui.widget.FilterTextView android:id="@+id/filterTv" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="48dp" android:layout_marginEnd="20dp"/>
+    <com.jihuanshe.ui.widget.RarityFilterBtn android:textSize="12sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center_vertical" android:id="@+id/rarityFilter" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+</LinearLayout>

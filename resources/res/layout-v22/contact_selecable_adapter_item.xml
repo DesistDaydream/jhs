@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/selectable_contact_item" android:background="#ffffff" android:focusable="true" android:layout_width="match_parent" android:layout_height="58.5dp">
+    <LinearLayout android:paddingLeft="15.36dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <CheckBox android:id="@+id/contact_check_box" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:button="@drawable/checkbox_selector"/>
+        <com.tencent.qcloud.tuicore.component.gatherimage.ShadeImageView android:id="@+id/ivAvatar" android:focusable="false" android:clickable="false" android:layout_width="@dimen/contact_avatar_width" android:layout_height="@dimen/contact_avatar_height"/>
+        <RelativeLayout android:paddingLeft="11.5dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="17.28sp" android:textColor="@color/black_font_color" android:ellipsize="end" android:id="@+id/tvCity" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerInParent="true" android:lineHeight="23.04sp"/>
+            <com.tencent.qcloud.tuicore.component.UnreadCountTextView android:textSize="10sp" android:textColor="#fff" android:gravity="center" android:id="@+id/conversation_unread" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="24dp" android:includeFontPadding="false" android:layout_alignParentRight="true" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@+id/view_line" android:background="@color/split_lint_color" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="73.78dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

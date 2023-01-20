@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:gravity="center" android:id="@+id/photoTv" android:padding="10dp" android:layout_width="match_parent" android:layout_height="50dp" android:text="@string/pic"/>
+    <TextView android:gravity="center" android:id="@+id/takePhotoTv" android:padding="10dp" android:layout_width="match_parent" android:layout_height="50dp" android:text="@string/photo"/>
+    <TextView android:gravity="center" android:id="@+id/takeVideoTv" android:padding="10dp" android:layout_width="match_parent" android:layout_height="50dp" android:text="@string/video"/>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:tag="layout/view_game_drop_box_small_0" android:layout_width="wrap_content" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="7dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <ImageView android:id="@+id/backIv" android:background="@drawable/bg_game_bar" android:layout_width="38dp" android:layout_height="30dp" android:src="@drawable/icon_back"/>
+        <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center_vertical" android:id="@+id/nameTv" android:tag="binding_1" android:background="@drawable/bg_game_bar" android:layout_width="wrap_content" android:layout_height="30dp" android:singleLine="true" android:drawableStart="@drawable/svg_game_bar" android:paddingStart="5dp" android:paddingEnd="10dp" android:layout_marginStart="7dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

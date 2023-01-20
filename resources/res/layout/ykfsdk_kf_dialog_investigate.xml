@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/ykfsdk_all_white" android:paddingLeft="15dp" android:paddingTop="25dp" android:paddingRight="15dp" android:paddingBottom="25dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:fadeScrollbars="false">
+        <RelativeLayout android:padding="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_head" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18sp" android:textColor="@color/ykfsdk_all_black" android:gravity="center" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ykfsdk_satisfy_title_name"/>
+                <TextView android:textSize="14sp" android:gravity="center" android:id="@+id/investigate_title" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/ykfsdk_satisfy_title"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/investigate_tag_ll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:layout_below="@+id/ll_head">
+                <RadioGroup android:orientation="vertical" android:id="@+id/investigate_rg" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <com.m7.imkfsdk.view.TagView android:id="@+id/investigate_second_tg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp"/>
+            </LinearLayout>
+            <EditText android:textSize="15sp" android:gravity="top" android:id="@+id/investigate_et" android:background="@drawable/ykfsdk_kf_investigate_edittext" android:padding="10dp" android:layout_width="match_parent" android:layout_height="100dp" android:layout_marginTop="30dp" android:hint="@string/ykfsdk_ykf_evaluation_content" android:maxLength="120" android:layout_below="@+id/investigate_tag_ll"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/investigate_btn_ll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:layout_below="@+id/investigate_et">
+                <Button android:textSize="15sp" android:textColor="#ffffff" android:id="@+id/investigate_save_btn" android:background="@drawable/ykfsdk_ykf_main_btn_bg" android:layout_width="118dp" android:layout_height="42dp" android:layout_marginRight="5dp" android:text="@string/ykfsdk_ykf_submit_review" android:layout_toLeftOf="@+id/investigate_cancel_btn" style="?android:attr/borderlessButtonStyle"/>
+                <Button android:textSize="15sp" android:textColor="#333333" android:id="@+id/investigate_cancel_btn" android:background="@drawable/ykfsdk_kf_investigate_cancel_btn" android:layout_width="118dp" android:layout_height="42dp" android:layout_marginLeft="5dp" android:text="@string/ykfsdk_cancel" style="?android:attr/borderlessButtonStyle"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

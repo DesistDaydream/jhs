@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:tag="layout/fragment_selling_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.jihuanshe.base.ui.widget.SlideIndicatorView android:id="@+id/indicator" android:tag="binding_1" android:background="@color/white" android:layout_width="match_parent" android:layout_height="48dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <FrameLayout android:id="@+id/filterBar" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@+id/indicator">
+        <androidx.constraintlayout.widget.ConstraintLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="48dp">
+            <com.jihuanshe.base.ui.widget.SlideIndicatorView android:tag="binding_2" android:layout_width="0dp" android:layout_height="match_parent" android:paddingStart="10dp" android:paddingEnd="10dp" app:layout_constraintEnd_toStartOf="@+id/filterTv" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+            <com.jihuanshe.ui.widget.RarityFilterBtn android:textSize="12sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center_vertical" android:id="@+id/rarityBtn" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="20dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0"/>
+            <View android:id="@+id/divider" android:background="@color/black_f2f2f4" android:layout_width="0.5dp" android:layout_height="0dp" android:layout_marginTop="15dp" android:layout_marginBottom="15dp" android:layout_marginEnd="10dp" android:layout_marginVertical="15dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@+id/rarityBtn" app:layout_constraintTop_toTopOf="0"/>
+            <com.jihuanshe.ui.widget.FilterTextView android:id="@+id/filterTv" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginEnd="20dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@+id/divider" app:layout_constraintTop_toTopOf="0"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+    <com.vector.view.pager.ViewPager android:id="@+id/viewPager" android:tag="binding_5" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/filterBar"/>
+    <View android:id="@+id/maskView" android:tag="binding_6" android:background="@color/common_bg_color" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <View app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/filterBar" style="@style/ShadowStyle"/>
+    <include app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/tab" layout="@layout/view_search_history"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

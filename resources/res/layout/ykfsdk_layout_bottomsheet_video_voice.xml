@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/ykfsdk_bg_bottom_sheet" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="18sp" android:textColor="@color/ykfsdk_all_black" android:gravity="center" android:id="@+id/tv_video_call" android:layout_width="match_parent" android:layout_height="50dp" android:text="视频通话"/>
+    <View android:background="@color/ykfsdk_color_e6e6e6" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <TextView android:textSize="18sp" android:textColor="@color/ykfsdk_all_black" android:gravity="center" android:id="@+id/tv_voice_call" android:layout_width="match_parent" android:layout_height="50dp" android:text="语音通话"/>
+    <View android:background="@color/ykfsdk_color_e6e6e6" android:layout_width="match_parent" android:layout_height="7dp"/>
+    <TextView android:textSize="18sp" android:textColor="@color/ykfsdk_all_black" android:gravity="center" android:id="@+id/tv_call_cancle" android:layout_width="match_parent" android:layout_height="50dp" android:text="取消"/>
+</LinearLayout>

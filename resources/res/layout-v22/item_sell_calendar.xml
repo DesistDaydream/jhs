@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jihuanshe.ui.widget.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:tag="layout/item_sell_calendar_0" android:layout_width="match_parent" android:layout_height="wrap_content" app:shimmer_base_alpha="0.7" app:shimmer_base_color="@color/black">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingEnd="18dp">
+        <FrameLayout android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@+id/coverIv" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+            <TextView android:textSize="12sp" android:textColor="@color/black_b5b5b7" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/coverIv" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_marginBottom="27dp" android:layout_marginStart="50dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+            <com.vector.network.image.NImageView android:tag="binding_4" android:layout_width="78dp" android:layout_height="78dp"/>
+        </FrameLayout>
+        <View android:id="@+id/top1" android:background="@drawable/bg_pack_top" android:visibility="invisible" android:layout_width="0dp" android:layout_height="3dp" android:layout_marginLeft="3dp" android:layout_marginRight="3dp" android:layout_marginHorizontal="3dp" app:layout_constraintBottom_toTopOf="@+id/coverIv" app:layout_constraintEnd_toEndOf="@+id/coverIv" app:layout_constraintStart_toStartOf="@+id/coverIv"/>
+        <View android:id="@+id/top2" android:background="@drawable/bg_pack_top" android:visibility="invisible" android:layout_width="0dp" android:layout_height="3dp" android:layout_marginLeft="3dp" android:layout_marginRight="3dp" android:layout_marginHorizontal="3dp" app:layout_constraintBottom_toTopOf="@+id/top1" app:layout_constraintEnd_toEndOf="@+id/top1" app:layout_constraintStart_toStartOf="@+id/top1"/>
+        <FrameLayout android:id="@+id/nameCnTv" android:tag="binding_5" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:layout_marginStart="18dp" android:layout_marginEnd="10dp" app:layout_constraintEnd_toStartOf="@+id/pointView" app:layout_constraintStart_toEndOf="@+id/coverIv" app:layout_constraintTop_toTopOf="@+id/top2">
+            <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/black" android:tag="binding_6" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/pointView" android:tag="binding_7" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@+id/nameCnTv" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="@+id/nameCnTv">
+            <com.jihuanshe.ui.widget.ScoreView android:tag="binding_8" android:layout_width="wrap_content" android:layout_height="wrap_content" app:needStar="false" app:noTextColor="@color/black_b5b5b7" app:noTextSize="12" app:textBold="true" app:textColor="@color/black" app:textSize="16"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/secondNameLayout" android:tag="binding_9" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginEnd="10dp" app:layout_constraintEnd_toStartOf="@+id/scoreView" app:layout_constraintStart_toStartOf="@+id/nameCnTv" app:layout_constraintTop_toBottomOf="@+id/nameCnTv" app:layout_goneMarginEnd="0dp">
+            <TextView android:textSize="12sp" android:textColor="@color/black_b5b5b7" android:tag="binding_10" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"/>
+        </FrameLayout>
+        <com.jihuanshe.ui.widget.ScoreView android:id="@+id/scoreView" android:tag="binding_11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toBottomOf="@+id/pointView" app:needText="false" app:space="0dp"/>
+        <FrameLayout android:id="@+id/countTv" android:tag="binding_12" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginBottom="6dp" android:layout_marginEnd="10dp" app:layout_constraintBottom_toBottomOf="@+id/opBtn" app:layout_constraintEnd_toStartOf="@+id/opBtn" app:layout_constraintStart_toStartOf="@+id/nameCnTv">
+            <TextView android:textSize="10sp" android:textStyle="bold" android:textColor="@color/black_b5b5b7" android:tag="binding_13" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/numTv" android:tag="binding_14" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="3dp" app:layout_constraintEnd_toEndOf="@+id/countTv" app:layout_constraintStart_toStartOf="@+id/countTv" app:layout_constraintTop_toBottomOf="@+id/secondNameLayout">
+            <TextView android:textSize="12sp" android:textColor="@color/black_b5b5b7" android:tag="binding_15" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/opBtn" android:tag="binding_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="18dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0">
+            <TextView android:textSize="12sp" android:gravity="center" android:id="@+id/wishBtn" android:tag="binding_17" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="30dp" android:text="@string/wish_title" android:drawablePadding="5dp" android:paddingHorizontal="12dp"/>
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.jihuanshe.ui.widget.shimmer.ShimmerFrameLayout>

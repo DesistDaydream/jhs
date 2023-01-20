@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/error_view_ic" android:layout_width="192dp" android:layout_height="192dp" android:src="@drawable/default_ic_net_error"/>
+        <TextView android:textSize="14dp" android:textColor="@color/black" android:id="@+id/error_view_tv_error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/error_remind"/>
+        <TextView android:textSize="15dp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@+id/error_view_tv_retry" android:background="@drawable/shape_connect_error_retry_bg" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginTop="20dp" android:text="@string/retry" android:paddingStart="30dp" android:paddingEnd="30dp"/>
+    </LinearLayout>
+</LinearLayout>

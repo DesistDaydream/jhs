@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:tag="layout/dialog_choose_new_0" android:background="@drawable/bg_white_top_corner" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:layout_width="match_parent" android:layout_height="20dp"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/listView" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="280dp" android:overScrollMode="never"/>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="295dp" android:layout_height="97dp">
+        <TextView android:textSize="12sp" android:textColor="@color/white" android:gravity="center" android:tag="binding_2" android:background="@drawable/bg_black_left_corner" android:layout_width="0dp" android:layout_height="@dimen/bottom_btn_height" android:text="@string/common_cancel" android:layout_weight="1"/>
+        <TextView android:textSize="12sp" android:textColor="@color/white" android:gravity="center" android:tag="binding_3" android:background="@drawable/bg_shop_car_right" android:layout_width="0dp" android:layout_height="@dimen/bottom_btn_height" android:text="@string/common_confirm" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/ykfsdk_all_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:gravity="center_vertical" android:background="#f7f7f7" android:layout_width="wrap_content" android:layout_height="44dp">
+        <TextView android:textSize="16sp" android:textColor="?attr/ykfsdk_ykf_theme_color_default" android:id="@+id/view_bottom_dropdown_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="@string/ykfsdk_cancel"/>
+        <TextView android:textSize="16sp" android:textColor="?attr/ykfsdk_ykf_theme_color_default" android:id="@+id/view_bottom_dropdown_save" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:text="@string/ykfsdk_ykf_confirm" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <com.m7.imkfsdk.view.bottomselectview.WebChatSelector android:id="@+id/view_bottom_dropdown_addressselect" android:layout_width="match_parent" android:layout_height="200dp"/>
+    <ListView android:id="@+id/view_bottom_dropdown_listview" android:layout_width="match_parent" android:layout_height="200dp" android:divider="@null"/>
+</LinearLayout>

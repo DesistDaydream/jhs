@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:tag="layout/activity_choose_photo_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/fragmentContainer" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toTopOf="@+id/bottom" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/bottom" android:background="#222224" android:layout_width="0dp" android:layout_height="48dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0">
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/common_color_1" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/common_recent" android:layout_weight="1"/>
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:tag="binding_1" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/common_take_photo" android:layout_weight="1"/>
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:tag="binding_2" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/common_album" android:layout_weight="1"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

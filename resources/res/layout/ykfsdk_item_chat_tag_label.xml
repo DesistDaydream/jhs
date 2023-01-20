@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/ykfsdk_kf_chat_input_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="16sp" android:textColor="#262626" android:gravity="center" android:id="@+id/tv_flowItem" android:paddingLeft="12dp" android:paddingTop="7dp" android:paddingRight="12dp" android:paddingBottom="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</FrameLayout>

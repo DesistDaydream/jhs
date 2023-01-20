@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include android:id="@+id/include_time" layout="@layout/ykfsdk_ykf_chatitem_time"/>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/ykfsdk_ykf_receive_msg_bg" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+        <ImageView android:id="@+id/iv_tab_question_logo" android:layout_width="130dp" android:layout_height="40dp" android:layout_marginTop="6dp" android:layout_marginBottom="4dp" android:src="@drawable/ykfsdk_ic_kf_tabquestion" android:scaleType="fitXY"/>
+        <com.google.android.material.tabs.TabLayout android:id="@+id/tb_question" android:layout_width="match_parent" android:layout_height="48dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:tabIndicatorColor="@color/ykfsdk_ykf_color_default" app:tabIndicatorFullWidth="false" app:tabIndicatorHeight="3dp" app:tabMode="0" app:tabSelectedTextColor="@color/ykfsdk_ykf_color_default" app:tabTextAppearance="@style/ykfsdk_TabText" app:tabTextColor="@color/ykfsdk_color_333333"/>
+        <TextView android:background="@color/ykfsdk_kf_hint_view" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <androidx.viewpager.widget.ViewPager android:id="@+id/vp_tabquestion" android:layout_width="match_parent" android:layout_height="100dp"/>
+        <TextView android:textSize="15sp" android:textColor="@color/ykfsdk_ykf_color_default" android:gravity="center" android:id="@+id/tv_seemore" android:paddingTop="8dp" android:paddingBottom="12dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/ykfsdk_ykf_lookmore"/>
+    </LinearLayout>
+</LinearLayout>

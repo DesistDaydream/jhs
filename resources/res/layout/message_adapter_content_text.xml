@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="30dp">
+    <TextView android:textSize="@dimen/chat_message_text_size" android:textColor="?attr/chat_self_msg_text_color" android:gravity="center_vertical" android:id="@+id/msg_body_tv" android:paddingLeft="7dp" android:paddingRight="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="276dp"/>
+</LinearLayout>

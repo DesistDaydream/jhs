@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.jihuanshe.base.wheelview.WheelYearPicker android:id="@+id/wheel_date_picker_year" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+    <com.jihuanshe.base.wheelview.WheelMonthPicker android:id="@+id/wheel_date_picker_month" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+    <com.jihuanshe.base.wheelview.WheelDayPicker android:id="@+id/wheel_date_picker_day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+</LinearLayout>

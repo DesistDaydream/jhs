@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:tag="layout/dialog_list_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="@drawable/bg_white_top_corner" android:layout_width="match_parent" android:layout_height="20dp"/>
+    <com.tencent.qcloud.tuikit.tuichat.ui.view.message.MaxHeightFrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" app:maxHeight="264dp">
+        <androidx.recyclerview.widget.RecyclerView android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </com.tencent.qcloud.tuikit.tuichat.ui.view.message.MaxHeightFrameLayout>
+    <FrameLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="295dp" android:layout_height="97dp">
+            <TextView android:textSize="12sp" android:textColor="@color/white" android:gravity="center" android:tag="binding_2" android:background="@drawable/bg_black_left_corner" android:layout_width="0dp" android:layout_height="@dimen/bottom_btn_height" android:text="@string/common_cancel" android:layout_weight="125"/>
+            <TextView android:textSize="12sp" android:textColor="@color/white" android:gravity="center" android:tag="binding_3" android:background="@drawable/bg_shop_car_right" android:layout_width="0dp" android:layout_height="@dimen/bottom_btn_height" android:text="@string/common_confirm" android:layout_weight="170"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

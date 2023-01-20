@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/wrapper_states" android:background="@color/black" android:layout_width="match_parent" android:layout_height="@dimen/ucrop_height_wrapper_states" android:baselineAligned="false">
+        <LinearLayout android:id="@+id/state_aspect_ratio" style="@style/mcrop_WrapperIconState">
+            <ImageView android:gravity="center" android:orientation="vertical" android:id="@+id/image_view_state_aspect_ratio" app:srcCompat="@drawable/mcrop_ic_crop" style="@style/ucrop_ImageViewWidgetIcon"/>
+            <TextView android:id="@+id/text_view_crop" android:text="@string/common_cut" style="@style/mcrop_TextViewWidget"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/state_adjust" style="@style/mcrop_WrapperIconState">
+            <ImageView android:id="@+id/image_view_state_adjust" app:srcCompat="@drawable/mcrop_ic_adjust" style="@style/ucrop_ImageViewWidgetIcon"/>
+            <TextView android:id="@+id/text_view_adjust" android:text="@string/common_adjust" style="@style/mcrop_TextViewWidget"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/state_rotate" android:visibility="gone" style="@style/mcrop_WrapperIconState">
+            <ImageView android:id="@+id/image_view_state_rotate" app:srcCompat="@drawable/ucrop_rotate" style="@style/ucrop_ImageViewWidgetIcon"/>
+            <TextView android:id="@+id/text_view_rotate" android:text="@string/ucrop_rotate" style="@style/mcrop_TextViewWidget"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/state_scale" android:visibility="gone" style="@style/mcrop_WrapperIconState">
+            <ImageView android:id="@+id/image_view_state_scale" app:srcCompat="@drawable/ucrop_scale" style="@style/ucrop_ImageViewWidgetIcon"/>
+            <TextView android:id="@+id/text_view_scale" android:text="@string/ucrop_scale" style="@style/mcrop_TextViewWidget"/>
+        </LinearLayout>
+        <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@+id/saveBtn" android:background="@drawable/bg_check_consignment_" android:layout_width="79dp" android:layout_height="36dp" android:text="@string/common_add" android:layout_marginEnd="24dp"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:tag="layout/dialog_want_buy_0" android:layout_width="match_parent" android:layout_height="270dp">
+    <View android:background="@drawable/ripple_default_top_corner_8" android:layout_width="match_parent" android:layout_height="20dp"/>
+    <TextView android:textSize="14sp" android:textColor="@color/black_333333" android:gravity="center" android:tag="binding_1" android:background="@drawable/ripple_default" android:layout_width="match_parent" android:layout_height="56dp" android:text="设为默认"/>
+    <TextView android:textSize="14sp" android:textColor="@color/black_333333" android:gravity="center" android:tag="binding_2" android:background="@drawable/ripple_default" android:layout_width="match_parent" android:layout_height="56dp" android:text="重命名"/>
+    <TextView android:textSize="14sp" android:textColor="@color/black_333333" android:gravity="center" android:tag="binding_3" android:background="@drawable/ripple_default" android:layout_width="match_parent" android:layout_height="56dp" android:text="删除"/>
+    <TextView android:textSize="14sp" android:textColor="@color/black_333333" android:gravity="center" android:tag="binding_4" android:background="@drawable/ripple_default" android:layout_width="match_parent" android:layout_height="56dp" android:text="@string/cancel"/>
+    <View android:background="@color/white" android:layout_width="match_parent" android:layout_height="26dp"/>
+</LinearLayout>

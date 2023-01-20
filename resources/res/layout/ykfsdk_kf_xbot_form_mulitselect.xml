@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:background="@color/ykfsdk_all_white" android:padding="@dimen/ykfsdk_ykf_xbot_form_title_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/ykfsdk_ykf_xbot_form_title_size" android:textStyle="bold" android:textColor="#151515" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="你好"/>
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/ykfsdk_ykf_required" android:id="@+id/tv_required" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:text="*" android:layout_toRightOf="@+id/tv_title"/>
+        <com.m7.imkfsdk.view.MulitTagView android:id="@+id/mtv_tagview" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_below="@+id/tv_title"/>
+    </RelativeLayout>
+</RelativeLayout>

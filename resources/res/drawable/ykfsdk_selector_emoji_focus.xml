@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@drawable/ykfsdk_kf_chatting_setmode_keyboard_btn_normal"/>
+    <item android:state_focused="true" android:drawable="@drawable/ykfsdk_kf_chatting_setmode_keyboard_btn_normal"/>
+    <item android:state_selected="false" android:drawable="@drawable/ykfsdk_kf_icon_chat_emoji_normal"/>
+</selector>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:tag="layout/dialog_buyer_cancel_reason_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="@drawable/bg_white_top_corner" android:layout_width="match_parent" android:layout_height="20dp"/>
+    <TextView android:textSize="12sp" android:textColor="@color/black_b5b5b7" android:gravity="center" android:background="@color/white" android:layout_width="match_parent" android:layout_height="30dp" android:text="@string/common_send_cancel_order"/>
+    <TextView android:textSize="14sp" android:textColor="@color/black_333333" android:gravity="center" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="56dp" android:text="@string/reason_buyer_cancel_1"/>
+    <TextView android:textSize="14sp" android:textColor="@color/black_333333" android:gravity="center" android:tag="binding_2" android:layout_width="match_parent" android:layout_height="56dp" android:text="@string/reason_buyer_cancel_2"/>
+    <TextView android:textSize="14sp" android:textColor="@color/black_333333" android:gravity="center" android:tag="binding_3" android:layout_width="match_parent" android:layout_height="56dp" android:text="@string/reason_buyer_cancel_3"/>
+    <TextView android:textSize="14sp" android:textColor="@color/black_333333" android:gravity="center" android:tag="binding_4" android:layout_width="match_parent" android:layout_height="56dp" android:text="@string/reason_buyer_cancel_4"/>
+    <TextView android:textSize="14sp" android:textColor="@color/black_333333" android:gravity="center" android:tag="binding_5" android:layout_width="match_parent" android:layout_height="56dp" android:text="@string/reason_buyer_cancel_5"/>
+    <FrameLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:background="@color/white" android:layout_width="295dp" android:layout_height="97dp">
+            <TextView android:textSize="12sp" android:textColor="@color/white" android:gravity="center" android:tag="binding_6" android:background="@drawable/bg_black_left_corner" android:layout_width="0dp" android:layout_height="@dimen/bottom_btn_height" android:text="@string/common_cancel" android:layout_weight="125"/>
+            <TextView android:textSize="12sp" android:textColor="@color/white" android:gravity="center" android:tag="binding_7" android:background="@drawable/bg_shop_car_right" android:layout_width="0dp" android:layout_height="@dimen/bottom_btn_height" android:text="@string/common_cancel_order_ok" android:layout_weight="170"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

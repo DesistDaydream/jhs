@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:tag="layout/activity_close_account_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:background="@drawable/bg_card_9_white" android:paddingBottom="25dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="12dp" app:layout_constrainedHeight="true" app:layout_constraintBottom_toTopOf="@+id/confirmBtn" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_bias="0">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="18dp" android:paddingRight="18dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/black" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="11dp"/>
+            <TextView android:textSize="12sp" android:textColor="@color/black_333333" android:tag="binding_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="21dp" android:lineSpacingExtra="4dp"/>
+        </LinearLayout>
+    </ScrollView>
+    <TextView android:textSize="14sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/confirmBtn" android:tag="binding_3" android:background="@drawable/bg_close_btn" android:layout_width="240dp" android:layout_height="54dp" android:layout_marginBottom="24dp" android:text="@string/close_allow" app:layout_constraintBottom_toTopOf="@+id/regularTv" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0"/>
+    <TextView android:textSize="12sp" android:textColor="@color/black_99999a" android:gravity="center" android:id="@+id/regularTv" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_marginRight="18dp" android:layout_marginBottom="39dp" android:text="@string/close_regular" android:lineSpacingExtra="4dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0"/>
+    <FrameLayout android:tag="binding_4" android:background="@color/white" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="111dp" android:layout_height="126dp" android:src="@drawable/svg_commit_success"/>
+            <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="31dp" android:text="@string/common_request_commited"/>
+            <TextView android:textSize="14sp" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center_horizontal" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="83dp" android:layout_marginTop="21dp" android:layout_marginRight="83dp"/>
+        </LinearLayout>
+    </FrameLayout>
+    <View app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/ShadowStyle"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

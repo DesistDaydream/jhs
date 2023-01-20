@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/file_msg_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/file_msg_icon_iv" android:layout_width="@dimen/reply_icon_size" android:layout_height="@dimen/reply_icon_size" android:src="@drawable/file_icon"/>
+        <TextView android:textSize="@dimen/reply_origin_text_size" android:textColor="?attr/chat_self_reply_quote_text_color" android:ellipsize="middle" android:layout_gravity="center_vertical" android:id="@+id/file_msg_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/reply_abstract_margin_left" android:singleLine="true"/>
+    </LinearLayout>
+</FrameLayout>

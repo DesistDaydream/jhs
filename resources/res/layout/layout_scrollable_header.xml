@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/scrollable_extend_height">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/scrollable_header_layout_refresh" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/scrollable_header_iv_arrow" android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/swipe_refresh_ic_arrow" android:layout_marginEnd="8dp"/>
+            <TextView android:textSize="@dimen/scrollable_extend_text" android:textColor="@color/text_scrollable_header" android:id="@+id/scrollable_header_tv_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sr_list_header_hint_normal"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/scrollable_header_layout_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.vector.view.ProgressView android:id="@+id/scrollable_header_progress_view" android:layout_width="@dimen/scrollable_extend_loading_size" android:layout_height="@dimen/scrollable_extend_loading_size" android:src="@drawable/ic_loading"/>
+            <TextView android:textSize="@dimen/scrollable_extend_text" android:textColor="@color/text_scrollable_header" android:id="@+id/scrollable_header_tv_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/sr_list_header_hint_loading" android:layout_marginStart="8dp"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

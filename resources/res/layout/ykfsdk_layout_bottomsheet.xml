@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/ykfsdk_all_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@color/ykfsdk_color_f7f7f7" android:layout_width="match_parent" android:layout_height="48dp">
+        <TextView android:textSize="15sp" android:textColor="@color/ykfsdk_color_878787" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:text="请选择您想要查询的订单"/>
+        <ImageView android:id="@+id/iv_bottom_close" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:src="@drawable/ykfsdk_icon_shop_close" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_switch" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

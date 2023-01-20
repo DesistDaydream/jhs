@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:background="@drawable/ykfsdk_bg_common_bottom_sheet" android:layout_width="match_parent" android:layout_height="48dp">
+        <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/ykfsdk_color_333333" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:text="@string/ykfsdk_ykf_bottomdialog_title" android:layout_centerHorizontal="true"/>
+        <ImageView android:id="@+id/iv_bottom_close" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:src="@drawable/ykfsdk_kf_icon_close" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:background="@color/ykfsdk_all_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/ykfsdk_color_151515" android:id="@+id/tv_common_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="25dp" android:layout_marginRight="15dp" android:layout_centerHorizontal="true"/>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="35dp" android:layout_below="@+id/tv_common_title" android:layout_centerHorizontal="true">
+            <TextView android:textSize="15sp" android:textColor="@color/ykfsdk_all_white" android:id="@+id/tv_common_left" android:background="@drawable/ykfsdk_bg_common_button" android:paddingLeft="35dp" android:paddingTop="10dp" android:paddingRight="35dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25dp"/>
+            <TextView android:textSize="15sp" android:textColor="@color/ykfsdk_color_666666" android:id="@+id/tv_common_right" android:background="@drawable/ykfsdk_kf_investigate_cancel_btn" android:paddingLeft="35dp" android:paddingTop="10dp" android:paddingRight="35dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="25dp" android:layout_toRightOf="@+id/tv_common_left"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

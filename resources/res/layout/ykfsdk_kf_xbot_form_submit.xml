@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/ykfsdk_all_white" android:padding="@dimen/ykfsdk_ykf_xbot_form_title_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <Button android:textSize="18sp" android:textColor="@color/ykfsdk_all_white" android:layout_gravity="center_horizontal" android:id="@+id/bt_form_submit" android:background="@drawable/ykfsdk_ykf_main_btn_bg" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="20dp" android:text="@string/ykfsdk_ykf_confirm" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

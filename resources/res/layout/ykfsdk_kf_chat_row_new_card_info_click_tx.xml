@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include android:id="@+id/include_time" layout="@layout/ykfsdk_ykf_chatitem_time"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_order_main" android:background="@drawable/ykfsdk_ykf_receive_msg_bg" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:layout_marginBottom="10dp" android:layout_below="@+id/include_time">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+            <ImageView android:id="@+id/iv_order_img" android:layout_width="80dp" android:layout_height="80dp" android:src="@drawable/ykfsdk_kf_pic_thumb_bg"/>
+            <TextView android:textSize="16sp" android:textColor="@color/ykfsdk_color_333333" android:ellipsize="end" android:id="@+id/tv_order_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:maxLines="1" android:layout_toRightOf="@+id/iv_order_img" android:layout_alignTop="@+id/iv_order_img"/>
+            <TextView android:textSize="12sp" android:textColor="@color/ykfsdk_color_999999" android:ellipsize="end" android:id="@+id/tv_order_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="4dp" android:maxLines="1" android:layout_toRightOf="@+id/iv_order_img" android:layout_below="@+id/tv_order_title"/>
+            <TextView android:textSize="14sp" android:textColor="@color/ykfsdk_all_white" android:id="@+id/tv_send_order" android:background="@drawable/ykfsdk_bg_order_button_fill" android:paddingLeft="12dp" android:paddingTop="4dp" android:paddingRight="12dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/ykfsdk_ykf_sendto_agent" android:layout_below="@+id/tv_order_" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_other_title" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+</RelativeLayout>

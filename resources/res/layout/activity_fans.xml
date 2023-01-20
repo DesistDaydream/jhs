@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:tag="layout/activity_fans_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.vector.view.scrollable.ListView android:id="@+id/listView" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <View style="@style/ShadowStyle"/>
+</FrameLayout>

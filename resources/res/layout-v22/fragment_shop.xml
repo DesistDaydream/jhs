@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:tag="layout/fragment_shop_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.vector.view.scrollable.ListView android:id="@+id/listView" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="4.5dp" android:layout_marginRight="4.5dp" android:layout_marginHorizontal="4.5dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/csiv"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/llParent" android:tag="binding_2" android:paddingTop="36dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="0">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_scrollView" android:layout_width="match_parent" android:layout_height="113dp">
+            <androidx.constraintlayout.widget.ConstraintLayout android:tag="binding_3" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_left" android:paddingTop="22dp" android:paddingBottom="22dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingVertical="22dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@+id/ll_center" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+                    <ImageView android:layout_width="36dp" android:layout_height="36dp" android:src="@drawable/svg_gold" app:tint="#ffcc00"/>
+                    <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/black_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sell_with_confidence"/>
+                    <TextView android:textSize="10sp" android:textStyle="bold" android:textColor="@color/black_b5b5b7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/easy_realization"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_center" android:paddingTop="22dp" android:paddingBottom="22dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingVertical="22dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@+id/ll_right" app:layout_constraintStart_toEndOf="@+id/ll_left" app:layout_constraintTop_toTopOf="0">
+                    <ImageView android:layout_width="36dp" android:layout_height="36dp" android:src="@drawable/svg_gift" app:tint="#ffcc00"/>
+                    <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/black_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/buy_with_confidence"/>
+                    <TextView android:textSize="10sp" android:textStyle="bold" android:textColor="@color/black_b5b5b7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/genuine_guarantee"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_right" android:paddingTop="22dp" android:paddingBottom="22dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingVertical="22dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@+id/ll_center" app:layout_constraintTop_toTopOf="0">
+                    <ImageView android:layout_width="36dp" android:layout_height="36dp" android:src="@drawable/svg_service" app:tint="#ffcc00"/>
+                    <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/black_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/after_sale_warranty"/>
+                    <TextView android:textSize="10sp" android:textStyle="bold" android:textColor="@color/black_b5b5b7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/fast_delivery"/>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <com.jihuanshe.ui.widget.CPHorizontalScrollView android:id="@+id/cphSv" android:tag="binding_4" android:background="@color/white" android:paddingLeft="9dp" android:scrollbars="none" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/view_filter_bar_shop_home"/>
+        <View style="@style/ShadowStyle"/>
+    </LinearLayout>
+    <com.jihuanshe.ui.widget.CustomShopIndicatorView android:id="@+id/csiv" android:tag="binding_5" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="36dp" app:layout_constraintTop_toTopOf="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

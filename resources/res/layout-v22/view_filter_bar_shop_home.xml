@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:tag="layout/view_filter_bar_shop_home_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/llBar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="48dp" android:paddingStart="14dp" android:paddingEnd="24dp" app:layout_constraintTop_toTopOf="0">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:tag="binding_1" android:background="@drawable/bg_global_search_" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="32dp" android:paddingHorizontal="15dp">
+            <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/svg_warehouse"/>
+            <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="集换仓主页" android:layout_marginStart="6dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <TextView android:textStyle="bold" android:textColor="@color/selector_text_home" android:gravity="center" android:id="@+id/saleTv" android:tag="binding_3" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/shop_on_sale" android:paddingHorizontal="10dp"/>
+            <TextView android:textStyle="bold" android:textColor="@color/selector_text_home" android:gravity="center" android:id="@+id/buyTv" android:tag="binding_4" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/shop_want_buy" android:paddingHorizontal="10dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="end" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.jihuanshe.ui.widget.FilterTextView android:id="@+id/filterTv" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="48dp" android:layout_marginEnd="20dp"/>
+            <com.jihuanshe.ui.widget.RarityFilterBtn android:textSize="12sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center_vertical" android:id="@+id/rarityFilter" android:tag="binding_6" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

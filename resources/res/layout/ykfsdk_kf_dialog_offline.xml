@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:background="#f6f6f6" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:background="@color/ykfsdk_all_white" android:layout_width="match_parent" android:layout_height="48dp">
+            <TextView android:textSize="16sp" android:textColor="?attr/ykfsdk_ykf_theme_color_default" android:gravity="center_vertical" android:id="@+id/back" android:layout_width="50dp" android:layout_height="40dp" android:layout_marginLeft="15dp" android:text="@string/ykfsdk_close" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="18sp" android:textColor="@color/ykfsdk_all_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ykfsdk_leavemsg" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="16sp" android:textColor="?attr/ykfsdk_ykf_theme_color_default" android:id="@+id/inviteLeavemsgTip" android:background="@drawable/ykfsdk_ykf_bg_offline_tittle" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/offline_ll_custom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+            <EditText android:gravity="top" android:id="@+id/id_et_content" android:background="@drawable/ykfsdk_kf_offlinedialog_et_bg" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:hint="@string/ykfsdk_pleaseleavemsg" android:maxLines="6" android:minLines="6"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/offline_ll_custom_field" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <Button android:textSize="18sp" android:textColor="@color/ykfsdk_all_white" android:id="@+id/id_btn_submit" android:background="@drawable/ykfsdk_ykf_main_btn_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16dp" android:text="@string/ykfsdk_submit_leavemsg"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

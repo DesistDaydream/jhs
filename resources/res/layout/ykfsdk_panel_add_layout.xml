@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="vertical" android:background="@color/ykfsdk_color_f6" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <View android:background="@color/ykfsdk_color_e7" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginBottom="30dp"/>
+    <com.google.android.flexbox.FlexboxLayout android:paddingLeft="25dp" android:paddingRight="25dp" android:layout_width="match_parent" android:layout_height="match_parent" app:alignContent="0" app:alignItems="2" app:dividerDrawable="@drawable/ykfsdk_flex_divider" app:flexWrap="1" app:justifyContent="4" app:showDivider="0x2">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_photo" android:background="@drawable/ykfsdk_selector_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dp" app:layout_alignSelf="0">
+            <ImageView android:layout_width="60dp" android:layout_height="60dp" android:src="@drawable/ykfsdk_kf_icon_chat_pic"/>
+            <TextView android:textSize="12sp" android:textColor="@color/ykfsdk_color_6d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/ykfsdk_chat_img" android:includeFontPadding="false"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_file" android:background="@drawable/ykfsdk_selector_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dp">
+            <ImageView android:layout_width="60dp" android:layout_height="60dp" android:src="@drawable/ykfsdk_kf_icon_chat_file"/>
+            <TextView android:textSize="12sp" android:textColor="@color/ykfsdk_color_6d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/ykfsdk_chat_file" android:includeFontPadding="false"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_invite" android:background="@drawable/ykfsdk_selector_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dp">
+            <ImageView android:layout_width="60dp" android:layout_height="60dp" android:src="@drawable/ykfsdk_kf_icon_chat_investigate"/>
+            <TextView android:textSize="12sp" android:textColor="@color/ykfsdk_color_6d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/ykfsdk_chat_evaluate" android:includeFontPadding="false"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_question" android:background="@drawable/ykfsdk_selector_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dp">
+            <ImageView android:layout_width="60dp" android:layout_height="60dp" android:src="@drawable/ykfsdk_kf_icon_chat_question"/>
+            <TextView android:textSize="12sp" android:textColor="@color/ykfsdk_color_6d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/ykfsdk_chat_question" android:includeFontPadding="false"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_video" android:background="@drawable/ykfsdk_selector_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dp">
+            <ImageView android:layout_width="60dp" android:layout_height="60dp" android:src="@drawable/ykfsdk_icon_chat_video"/>
+            <TextView android:textSize="12sp" android:textColor="@color/ykfsdk_color_6d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/ykfsdk_chat_video_call" android:includeFontPadding="false"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dp">
+            <ImageView android:layout_width="60dp" android:layout_height="60dp"/>
+            <TextView android:textSize="12sp" android:textColor="@color/ykfsdk_color_6d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:includeFontPadding="false"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dp">
+            <ImageView android:layout_width="60dp" android:layout_height="60dp"/>
+            <TextView android:textSize="12sp" android:textColor="@color/ykfsdk_color_6d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:includeFontPadding="false"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dp">
+            <ImageView android:layout_width="60dp" android:layout_height="60dp"/>
+            <TextView android:textSize="12sp" android:textColor="@color/ykfsdk_color_6d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:includeFontPadding="false"/>
+        </LinearLayout>
+    </com.google.android.flexbox.FlexboxLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cancel">Bantal</string>
+    <string name="confirm">Oke</string>
+    <string name="error_remind">Kesalahan jaringan, silakan coba lagi nanti</string>
+    <string name="load_fail">Pemuatan gagal, klik untuk mencoba lagi</string>
+    <string name="retry">Coba Lagi</string>
+</resources>

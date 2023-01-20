@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/ykfsdk_color_f7f7f7" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/setting_new_i_title" layout="@layout/ykfsdk_titlebar"/>
+    <View android:background="@color/ykfsdk_lightgrey" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <WebView android:id="@+id/webView1" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

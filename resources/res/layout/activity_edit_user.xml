@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:tag="layout/activity_edit_user_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/infoView" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <View android:background="@color/white" android:layout_width="match_parent" android:layout_height="25dp"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:tag="binding_1" android:background="@color/white" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="30dp" android:paddingEnd="26dp">
+            <TextView android:textSize="12sp" android:textColor="@color/black_333333" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/common_avatar" android:layout_weight="1"/>
+            <com.vector.network.image.NImageView android:tag="binding_2" android:layout_width="54dp" android:layout_height="54dp" android:layout_marginEnd="14dp"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/svg_arrow_right" app:tint="@color/black_b5b5b7"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:tag="binding_3" android:background="@color/white" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0.5dp" android:paddingStart="30dp" android:paddingEnd="26dp">
+            <TextView android:textSize="12sp" android:textColor="@color/black_333333" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/common_nick" android:layout_weight="1" android:layout_marginEnd="10dp"/>
+            <TextView android:textSize="12sp" android:textColor="@color/black" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="14dp"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/svg_arrow_right" app:tint="@color/black_b5b5b7"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:tag="binding_5" android:background="@color/white" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0.5dp" android:paddingStart="30dp" android:paddingEnd="26dp">
+            <TextView android:textSize="12sp" android:textColor="@color/black_333333" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/common_bio" android:layout_weight="1" android:layout_marginEnd="10dp"/>
+            <TextView android:textSize="12sp" android:textColor="@color/black" android:ellipsize="end" android:tag="binding_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="160dp" android:maxLines="2" android:layout_marginEnd="14dp"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/svg_arrow_right" app:tint="@color/black_b5b5b7"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:tag="binding_7" android:background="@color/white" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0.5dp" android:paddingStart="30dp" android:paddingEnd="26dp">
+            <TextView android:textSize="12sp" android:textColor="@color/black_333333" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/common_phone" android:layout_weight="1" android:layout_marginEnd="10dp"/>
+            <TextView android:textSize="12sp" android:textColor="@color/black" android:tag="binding_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="14dp"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/svg_arrow_right" app:tint="@color/black_b5b5b7"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:tag="binding_9" android:background="@color/white" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0.5dp" android:paddingStart="30dp" android:paddingEnd="26dp">
+            <TextView android:textSize="12sp" android:textColor="@color/black_333333" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/common_address" android:layout_weight="1" android:layout_marginEnd="10dp"/>
+            <TextView android:textSize="12sp" android:textColor="@color/black" android:tag="binding_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="14dp"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/svg_arrow_right" app:tint="@color/black_b5b5b7"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/infoView">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:tag="binding_11" android:background="@color/white" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="30dp" android:paddingEnd="26dp">
+            <TextView android:textSize="12sp" android:textColor="@color/black_333333" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/common_default_shipping" android:layout_weight="1"/>
+            <TextView android:textSize="12sp" android:textColor="@color/black" android:tag="binding_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="14dp"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/svg_arrow_right" app:tint="@color/black_b5b5b7"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:tag="binding_13" android:background="@color/white" android:paddingTop="14dp" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0.5dp" android:paddingStart="30dp" android:paddingEnd="26dp">
+            <TextView android:textSize="12sp" android:textColor="@color/black_333333" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/common_free_shipping_price" android:layout_weight="1"/>
+            <TextView android:textSize="12sp" android:textColor="@color/black" android:tag="binding_14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="14dp"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/svg_arrow_right" app:tint="@color/black_b5b5b7"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:tag="binding_15" android:background="@color/white" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0.5dp" android:paddingStart="30dp" android:paddingEnd="26dp">
+            <TextView android:textSize="12sp" android:textColor="@color/black_333333" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/title_address" android:layout_weight="1"/>
+            <TextView android:textSize="12sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="14dp"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/svg_arrow_right" app:tint="@color/black_b5b5b7"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="12sp" android:textColor="@color/black_333333" android:gravity="center" android:tag="binding_16" android:background="@color/white" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="12dp" android:text="@string/logout" app:layout_constraintTop_toBottomOf="@+id/ll"/>
+    <View app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/ShadowStyle"/>
+    <TextView android:textSize="10sp" android:textColor="@color/black_bbbbbb" android:gravity="center" android:tag="binding_17" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:paddingStart="20dp" android:paddingEnd="20dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

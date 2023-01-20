@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/page_title_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/page_title_left_group" android:paddingLeft="7dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:minWidth="80dp" android:layout_alignParentStart="true">
+        <ImageView android:id="@+id/page_title_left_icon" android:clickable="false" android:layout_width="38dp" android:layout_height="30dp" android:src="@drawable/title_bar_back"/>
+        <com.tencent.qcloud.tuicore.component.UnreadCountTextView android:textSize="13.4sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/new_message_total_unread" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="18.4dp" android:minHeight="18.4dp" android:includeFontPadding="false" android:layout_marginEnd="5dp"/>
+        <ImageView android:id="@+id/page_title_left_icon2" android:visibility="gone" android:clickable="false" android:layout_width="38dp" android:layout_height="30dp" android:src="@drawable/title_bar_back"/>
+        <TextView android:textSize="14sp" android:textColor="@color/black_font_color" android:gravity="center" android:id="@+id/page_title_left_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <TextView android:textSize="16sp" android:textColor="@color/black_font_color" android:id="@+id/page_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerInParent="true" android:textAlignment="center"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/page_title_right_group" android:paddingRight="7dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:minWidth="80dp" android:layout_alignParentRight="true">
+        <TextView android:textSize="14sp" android:textColor="@color/black_font_color" android:gravity="right" android:id="@+id/page_title_right_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <ImageView android:id="@+id/page_title_right_icon" android:clickable="false" android:layout_width="38dp" android:layout_height="30dp" android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+</RelativeLayout>

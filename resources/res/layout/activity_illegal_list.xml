@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:tag="layout/activity_illegal_list_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.vector.view.scrollable.ListView android:id="@+id/listView" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <View style="@style/ShadowStyle"/>
+    <TextView android:textSize="14sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom|center_horizontal" android:tag="binding_2" android:background="@drawable/bg_big_btn" android:layout_width="240dp" android:layout_height="@dimen/bottom_btn_height" android:layout_marginBottom="49dp" android:text="@string/kefu_community"/>
+</FrameLayout>

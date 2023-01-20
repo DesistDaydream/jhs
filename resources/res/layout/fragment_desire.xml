@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:tag="layout/fragment_desire_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.vector.view.pager.ViewPager android:id="@+id/viewPager" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/indicator"/>
+    <View android:layout_below="@+id/indicator" style="@style/ShadowStyle"/>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/indicator" android:layout_width="match_parent" android:layout_height="48dp">
+        <com.jihuanshe.base.ui.widget.SlideIndicatorView android:id="@+id/tab" android:tag="binding_2" android:layout_width="0dp" android:layout_height="48dp" android:paddingStart="10dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <com.jihuanshe.ui.widget.GameFilterBtn android:textSize="12sp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/gameFilter" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="25dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

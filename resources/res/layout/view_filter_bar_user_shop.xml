@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/llShopBar" android:tag="layout/view_filter_bar_user_shop_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="end|center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="14dp" android:paddingRight="14dp" android:layout_width="match_parent" android:layout_height="48dp">
+        <LinearLayout android:orientation="horizontal" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <TextView android:textStyle="bold" android:textColor="@color/selector_text_home" android:gravity="center" android:id="@+id/saleTv" android:tag="binding_2" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/shop_on_sale"/>
+            <TextView android:textStyle="bold" android:textColor="@color/selector_text_home" android:gravity="center" android:id="@+id/buyTv" android:tag="binding_3" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/shop_want_buy"/>
+        </LinearLayout>
+        <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+        <com.jihuanshe.ui.widget.FilterInfoBtn android:id="@+id/filterTv" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginEnd="20dp"/>
+        <com.jihuanshe.ui.widget.RarityFilterBtn android:textSize="12sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center_vertical" android:id="@+id/rarityFilterShop" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>

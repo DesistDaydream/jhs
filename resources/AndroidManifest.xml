@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="2000901" android:versionName="2.0.9.1" android:compileSdkVersion="31" android:compileSdkVersionCodename="12" package="com.jihuanshe" platformBuildVersionCode="31" platformBuildVersionName="12">
+    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="31"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <queries>
+        <package android:name="com.tencent.mm"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="com.huawei.hms.core.aidlservice"/>
+        </intent>
+        <intent>
+            <action android:name="com.huawei.hms.core"/>
+        </intent>
+    </queries>
+    <permission android:name="com.jihuanshe.openadsdk.permission.TT_PANGOLIN" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.jihuanshe.openadsdk.permission.TT_PANGOLIN"/>
+    <uses-permission android:name="com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE"/>
+    <uses-permission android:name="com.heytap.mcs.permission.RECIEVE_MCS_MESSAGE"/>
+    <uses-feature android:name="android.hardware.Camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+    <permission android:name="com.jihuanshe.permission.MIPUSH_RECEIVE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.jihuanshe.permission.MIPUSH_RECEIVE"/>
+    <uses-permission android:name="com.meizu.flyme.push.permission.RECEIVE"/>
+    <permission android:name="com.jihuanshe.push.permission.MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.jihuanshe.push.permission.MESSAGE"/>
+    <uses-permission android:name="com.meizu.c2dm.permission.RECEIVE"/>
+    <permission android:name="com.jihuanshe.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.jihuanshe.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="com.asus.msa.SupplementaryDID.ACCESS"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <permission android:name="com.jihuanshe.permission.XGPUSH_RECEIVE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.jihuanshe.permission.XGPUSH_RECEIVE"/>
+    <uses-permission android:name="com.meizu.flyme.permission.PUSH"/>
+    <permission android:name="com.jihuanshe.permission.PROCESS_PUSH_MSG" android:protectionLevel="signature"/>
+    <permission android:name="com.jihuanshe.permission.PUSH_PROVIDER" android:protectionLevel="signature"/>
+    <permission android:name="com.jihuanshe.permission.PUSH_WRITE_PROVIDER" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.jihuanshe.permission.PROCESS_PUSH_MSG"/>
+    <uses-permission android:name="com.jihuanshe.permission.PUSH_PROVIDER"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <application android:theme="@style/Theme.Jihuanshe" android:label="@string/app_name" android:icon="@mipmap/ic_launcher" android:name="com.jihuanshe.JApp" android:allowBackup="false" android:hardwareAccelerated="true" android:largeHeap="true" android:supportsRtl="true" android:usesCleartextTraffic="true" android:networkSecurityConfig="@xml/network_security_config" android:roundIcon="@mipmap/ic_launcher" android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+        <activity android:name="com.jihuanshe.ui.page.main.MainActivity" android:exported="true" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:theme="@android:style/Theme.Translucent" android:label="@string/app_name" android:name="com.jihuanshe.wxapi.WXEntryActivity" android:exported="true" android:launchMode="singleTask" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.jihuanshe.ui.page.login.LoginActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.jihuanshe.ui.page.search.SearchActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.jihuanshe.ui.page.detail.CardDetailActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.jihuanshe.ui.page.user.SellerDetailActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.jihuanshe.ui.page.order.OrderConfirmActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.jihuanshe.ui.page.order.OrderListActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.jihuanshe.ui.page.order.OrderDetailActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.jihuanshe.ui.page.order.AddressActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.jihuanshe.ui.page.order.AddAddressActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.jihuanshe.ui.page.user.FollowActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.jihuanshe.ui.page.user.FansActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.jihuanshe.ui.page.user.CoinActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.jihuanshe.ui.page.user.edit.EditUserActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.jihuanshe.ui.page.user.ShopCarActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.jihuanshe.ui.page.user.selling.SellingActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.jihuanshe.ui.page.user.BlackListActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.jihuanshe.ui.page.user.WantBuyActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.jihuanshe.ui.page.user.WantCardListActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.jihuanshe.ui.page.shop.AddCardActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.jihuanshe.ui.page.shop.ChooseCardActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.jihuanshe.ui.page.order.SellerOrderDetailActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.jihuanshe.ui.page.user.MineEntrepotActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.jihuanshe.ui.page.entrepot.ApplyForActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.jihuanshe.ui.page.entrepot.ApplyForReturnActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.jihuanshe.ui.page.entrepot.SubmitOrderReturnActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.jihuanshe.ui.page.entrepot.SubmitOrderActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.jihuanshe.ui.page.entrepot.ConOrderDetailsActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.jihuanshe.ui.page.rank.RankActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.jihuanshe.ui.page.detail.CardPackDetailActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.jihuanshe.ui.page.detail.CardPackListActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.jihuanshe.ui.page.detail.ReviewListActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.jihuanshe.ui.page.detail.ReplyListActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@android:style/Theme.Translucent" android:label="@string/app_name" android:name="com.jihuanshe.wxapi.WXPayEntryActivity" android:exported="true" android:launchMode="singleTask" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="wxe513b81e8994343a"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.jihuanshe.ui.page.web.CommonWebViewActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.jihuanshe.ui.page.user.WantBuyMatchActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.jihuanshe.ui.page.entrepot.ConsignmentOrderActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.jihuanshe.ui.page.entrepot.StorehouseActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.jihuanshe.ui.page.user.IllegalListActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.jihuanshe.ui.page.shop.SellerConfirmActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.jihuanshe.ui.page.shop.SearchBankActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.jihuanshe.ui.page.user.ShopOwnerConfirmActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.jihuanshe.ui.page.user.HelpActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.jihuanshe.ui.page.user.AboutActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:theme="@style/Theme.Splash" android:name="com.jihuanshe.ui.page.SplashActivity" android:exported="true" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="https" android:host="www.jihuanshe.com"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="jihuanshe" android:host="www.jihuanshe.com" android:path="/detail"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="jihuanshe" android:host="www.jihuanshe.com"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.jihuanshe.ui.page.im.ImChatActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.jihuanshe.ui.page.user.CloseAccountActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.jihuanshe.ui.page.user.AccountManagerActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.yalantis.ucrop.UCropActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.jihuanshe.ui.page.user.wish.WishListActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.jihuanshe.ui.page.shop.SellCalendarActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.jihuanshe.ui.page.im.InteractMessageActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.jihuanshe.ui.page.exam.EtiquetteExamActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.jihuanshe.ui.page.detail.AtUserActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.jihuanshe.ui.page.crop.MCropActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.jihuanshe.ui.page.camera.CaptureActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.jihuanshe.ui.page.user.edit.EditPhoneNumberActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.jihuanshe.ui.page.shop.AddProductActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.jihuanshe.ui.page.photo.ChoosePhotoActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <meta-data android:name="file_provider" android:value="com.jihuanshe.FileProvider"/>
+        <meta-data android:name="android.max_aspect" android:value="2.2"/>
+        <meta-data android:name="android.notch_support" android:value="true"/>
+        <meta-data android:name="notch.config" android:value="portrait|landscape"/>
+        <provider android:name="androidx.core.content.FileProvider" android:exported="false" android:authorities="com.jihuanshe.FileProvider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/rc_file_path"/>
+        </provider>
+        <provider android:name="com.bytedance.sdk.openadsdk.TTFileProvider" android:exported="false" android:authorities="com.jihuanshe.TTFileProvider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <provider android:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider" android:exported="false" android:authorities="com.jihuanshe.TTMultiProvider"/>
+        <provider android:name="com.qq.e.comm.GDTFileProvider" android:exported="false" android:authorities="com.jihuanshe.gdt.fileprovider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/gdt_file_path"/>
+        </provider>
+        <activity android:theme="@android:style/Theme.Light.NoTitleBar" android:name="com.qq.e.ads.PortraitADActivity" android:multiprocess="true" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity android:theme="@android:style/Theme.Light.NoTitleBar" android:name="com.qq.e.ads.LandscapeADActivity" android:multiprocess="true" android:screenOrientation="landscape" android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <service android:name="com.qq.e.comm.DownloadService" android:exported="false" android:multiprocess="true"/>
+        <activity android:name="com.qq.e.ads.ADActivity" android:multiprocess="true" android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.jihuanshe.ui.widget.imagepreview.GPreviewActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.jihuanshe.ui.widget.imagepreview.GPVideoPlayerActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.jihuanshe.ui.page.preview.ImagePreviewActivity" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.tencent.qcloud.tuikit.tuiconversation.ui.page.TUIForwardSelectActivity" android:screenOrientation="portrait"/>
+        <provider android:name="com.tencent.qcloud.tuikit.tuiconversation.TUIConversationService" android:enabled="true" android:exported="false" android:authorities="com.jihuanshe.TUIConversation.Init"/>
+        <activity android:name="com.tencent.qcloud.tuikit.tuichat.ui.page.TUIForwardChatActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tencent.qcloud.tuikit.tuichat.ui.page.TUIC2CChatActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.tencent.qcloud.tuikit.tuichat.ui.page.TUIGroupChatActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.tencent.qcloud.tuikit.tuichat.ui.page.GroupMessageReceiptActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tencent.qcloud.tuikit.tuichat.component.camera.CameraActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tencent.qcloud.tuikit.tuichat.component.imagevideoscan.ImageVideoScanActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <provider android:name="com.tencent.qcloud.tuikit.tuichat.TUIChatService" android:enabled="true" android:exported="false" android:authorities="com.jihuanshe.TUIChat.Init"/>
+        <activity android:name="com.tencent.qcloud.tuikit.tuicontact.ui.pages.AddMoreActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tencent.qcloud.tuikit.tuicontact.ui.pages.FriendProfileActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tencent.qcloud.tuikit.tuicontact.ui.pages.NewFriendActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tencent.qcloud.tuikit.tuicontact.ui.pages.BlackListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tencent.qcloud.tuikit.tuicontact.ui.pages.GroupListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tencent.qcloud.tuikit.tuicontact.ui.pages.StartC2CChatActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tencent.qcloud.tuikit.tuicontact.ui.pages.StartGroupChatActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateAlwaysHidden"/>
+        <activity android:name="com.tencent.qcloud.tuikit.tuicontact.ui.pages.ForwardSelectGroupActivity" android:launchMode="singleInstance" android:screenOrientation="portrait"/>
+        <activity android:name="com.tencent.qcloud.tuikit.tuicontact.ui.pages.StartGroupMemberSelectActivity" android:launchMode="singleInstance" android:screenOrientation="portrait"/>
+        <provider android:name="com.tencent.qcloud.tuikit.tuicontact.TUIContactService" android:enabled="true" android:exported="false" android:authorities="com.jihuanshe.TUIContact.Init"/>
+        <provider android:name="com.tencent.qcloud.tim.tuiofflinepush.TUIOfflinePushService" android:enabled="true" android:exported="false" android:authorities="com.jihuanshe.TUIOfflinePush.Init"/>
+        <service android:name="com.xiaomi.push.service.XMPushService" android:enabled="true" android:process=":pushservice"/>
+        <service android:name="com.xiaomi.push.service.XMJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false" android:process=":pushservice"/>
+        <service android:name="com.xiaomi.mipush.sdk.PushMessageHandler" android:enabled="true" android:exported="true"/>
+        <service android:name="com.xiaomi.mipush.sdk.MessageHandleService" android:enabled="true"/>
+        <receiver android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.xiaomi.push.service.receivers.PingReceiver" android:exported="false" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.tencent.qcloud.tim.tuiofflinepush.OEMPush.XiaomiMsgReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.tencent.qcloud.tim.tuiofflinepush.OEMPush.HUAWEIHmsMessageService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.huawei.push.action.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.tencent.qcloud.tim.tuiofflinepush.OEMPush.MEIZUPushReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.meizu.flyme.push.intent.MESSAGE"/>
+                <action android:name="com.meizu.flyme.push.intent.REGISTER.FEEDBACK"/>
+                <action android:name="com.meizu.flyme.push.intent.UNREGISTER.FEEDBACK"/>
+                <action android:name="com.meizu.c2dm.intent.REGISTRATION"/>
+                <action android:name="com.meizu.c2dm.intent.RECEIVE"/>
+                <category android:name="com.tencent.qcloud.tim.demo.thirdpush"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.vivo.push.sdk.service.CommandClientService" android:permission="com.push.permission.UPSTAGESERVICE" android:exported="true"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.vivo.push.sdk.LinkProxyClientActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <receiver android:name="com.tencent.qcloud.tim.tuiofflinepush.OEMPush.VIVOPushMessageReceiverImpl" android:exported="true">
+            <intent-filter>
+                <action android:name="com.vivo.pushclient.action.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.tencent.qcloud.tim.tuiofflinepush.OEMPush.GoogleFCMMsgService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.heytap.msp.push.service.CompatibleDataMessageCallbackService" android:permission="com.coloros.mcs.permission.SEND_MCS_MESSAGE" android:exported="true">
+            <intent-filter>
+                <action android:name="com.coloros.mcs.action.RECEIVE_MCS_MESSAGE"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.heytap.msp.push.service.DataMessageCallbackService" android:permission="com.heytap.mcs.permission.SEND_PUSH_MESSAGE" android:exported="true">
+            <intent-filter>
+                <action android:name="com.heytap.mcs.action.RECEIVE_MCS_MESSAGE"/>
+                <action android:name="com.heytap.msp.push.RECEIVE_MCS_MESSAGE"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="XG_V2_ACCESS_ID" android:value="1500017794"/>
+        <meta-data android:name="XG_V2_ACCESS_KEY" android:value="AJVRKD6SA4PP"/>
+        <meta-data android:name="XG_SERVICE_PULL_UP_OFF" android:value="true"/>
+        <receiver android:name="com.tencent.qcloud.tim.tuiofflinepush.TPNSPush.TPNSMessageReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.tencent.android.xg.vip.action.PUSH_MESSAGE"/>
+                <action android:name="com.tencent.android.xg.vip.action.FEEDBACK"/>
+            </intent-filter>
+        </receiver>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:name="com.tencent.qcloud.tuicore.component.activities.SelectionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tencent.qcloud.tuicore.util.PermissionRequester.PermissionActivity"/>
+        <provider android:name="com.tencent.qcloud.tuicore.ServiceInitializer" android:enabled="true" android:exported="false" android:authorities="com.jihuanshe.TUICore.Init"/>
+        <provider android:name="com.tencent.qcloud.tuicore.util.TUIFileProvider" android:exported="false" android:authorities="com.jihuanshe.tuicore.fileprovider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths_public"/>
+        </provider>
+        <activity android:theme="@style/JTranslucent" android:name="com.jihuanshe.base.ui.activity.GlobalToastActivity" android:launchMode="singleTask"/>
+        <service android:name="androidx.camera.core.impl.MetadataHolderService" android:enabled="false" android:exported="false">
+            <meta-data android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER" android:value="androidx.camera.camera2.Camera2Config$DefaultProvider"/>
+        </service>
+        <activity android:name="com.m7.imkfsdk.chat.ChatActivity" android:launchMode="singleTask" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:name="com.m7.imkfsdk.chat.OfflineMessageActicity" android:launchMode="singleTop" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:name="com.m7.imkfsdk.chat.ScheduleOfflineMessageActivity" android:launchMode="singleTop" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:name="com.m7.imkfsdk.MoorWebCenter" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:name="com.m7.imkfsdk.chat.CommonQuestionsActivity" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:name="com.m7.imkfsdk.chat.YKFVideoActivity" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:name="com.m7.imkfsdk.chat.CommonDetailQuestionActivity" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:theme="@style/ykfsdk_Theme.ImagePreview" android:name="com.m7.imkfsdk.view.imageviewer.MoorImagePreviewActivity"/>
+        <service android:name="com.moor.imkf.SocketService" android:exported="false" android:priority="2147483646"/>
+        <receiver android:name="com.m7.imkfsdk.receiver.NewMsgReceiver" android:enabled="true" android:exported="false">
+            <intent-filter android:priority="2147483647">
+                <action android:name="com.m7.imkf.KEFU_NEW_MSG"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.bytedance.msdk.api.activity.TTDelegateActivity"/>
+        <receiver android:name="com.bytedance.mapplog.collector.Collector" android:enabled="true" android:exported="false"/>
+        <meta-data android:name="ZEUS_PLUGIN_PANGLE" android:value="{                 apiVersionCode:4808,                 packageName:com.byted.pangle,                 minPluginVersion:4808,                 internalPath:1386557852,                 internalVersionCode:4808,                 signature:&apos;MIIDfTCCAmWgAwIBAgIEfRwYPjANBgkqhkiG9w0BAQsFADBvMQswCQYDVQQGEwJDTjEQMA4GA1UECBMHQmVpamluZzEQMA4GA1UEBxMHQmVpamluZzESMBAGA1UEChMJQnl0ZURhbmNlMQ8wDQYDVQQLEwZQYW5nbGUxFzAVBgNVBAMTDkNodWFuIFNoYW4gSmlhMB4XDTIxMTEwODA2MjQzOVoXDTQ2MTEwMjA2MjQzOVowbzELMAkGA1UEBhMCQ04xEDAOBgNVBAgTB0JlaWppbmcxEDAOBgNVBAcTB0JlaWppbmcxEjAQBgNVBAoTCUJ5dGVEYW5jZTEPMA0GA1UECxMGUGFuZ2xlMRcwFQYDVQQDEw5DaHVhbiBTaGFuIEppYTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAIBKeRL+4mfCn1SLYv6OemfwwItkjlLPyqOEugkV6lanFTcZgLwEl5LIkL0y28UncPtMX1Mii6DzCdJ/plw7S9+RT/hYDneu339IKWojaU2qai/5FokHlQ0MMnYl5yry00ghVPsl1u+03cQA2ZnjIMiFhrBJpQzHt7IYvq2aEEMBcY8uT7iFoBI848e1mL1joVS2z02C3NliP7ZNARkXH+rTQAlCJulT5IZk+V/PTaKqzgNrkhsKh0/tBmU7m8u79x/xpgGsE19H18AgS4P/9/MDCRe2Z35boZeccaUy2MXCwv3djzUcDk3rRzQPYzdpyyRnrFMuhiKesc5VHgUMs9kCAwEAAaMhMB8wHQYDVR0OBBYEFENENrNWGzc2WhxdvhoMDs57U70zMA0GCSqGSIb3DQEBCwUAA4IBAQAHqDCrmvyBBmIGXwuL1rwS/Qv9ZJIZykBIaNMm+H1IfitCl4yXd9N2n+PjE0UZtxZ21UZOt9wAr+RFiSl5YRXqpt7WLARTy4YW3RiQ+wiL7bshzeSYBoSiC427Bfeq0WjwY0/jHlr8uouppyJOz++6U9hrYX2EW/6UjH5XlWiKQJ6b2ZzPcP8Xpg/TJn4tWvXJP6jw9kRRP2GmMttY78leWQst2QEZILmWJubXRLPj9O+qx2uP9oGTD4sc1vb9hzkOHBIHzGaalqLFbbGaeFpLFHoGTsnOfPTwUVKDZYmxbkcmR1bp7eYOW+nSQNMLn0FjDewZl5l37Sa/gz0WVHon&apos;             }"/>
+        <activity android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Activity" android:exported="false" android:launchMode="standard" android:configChanges="screenSize|orientation|navigation|keyboardHidden" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity" android:exported="false" android:launchMode="standard" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|navigation|keyboardHidden" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:theme="@android:style/Theme.Translucent" android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Activity_T" android:exported="false" android:launchMode="standard" android:configChanges="screenSize|orientation|navigation|keyboardHidden" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Landscape_Activity" android:exported="false" android:launchMode="standard" android:screenOrientation="landscape" android:configChanges="screenSize|orientation|navigation|keyboardHidden" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_Activity" android:exported="false" android:configChanges="screenSize|orientation|navigation|keyboardHidden" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:theme="@android:style/Theme.Translucent" android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_SingleTask_Activity_T" android:exported="false" android:launchMode="singleTask" android:configChanges="screenSize|orientation|navigation|keyboardHidden" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.bytedance.sdk.openadsdk.stub.activity.Stub_SingleTask_Activity" android:exported="false" android:launchMode="singleTask" android:configChanges="screenSize|orientation|navigation|keyboardHidden" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <provider android:name="com.bytedance.sdk.openadsdk.stub.server.DownloaderServerManager" android:exported="false" android:process=":downloader" android:authorities="com.jihuanshe.pangle.servermanager.downloader.com.bytedance.sdk.openadsdk.adhost"/>
+        <provider android:name="com.bytedance.sdk.openadsdk.stub.server.MainServerManager" android:exported="false" android:authorities="com.jihuanshe.pangle.servermanager.main"/>
+        <provider android:name="com.bytedance.pangle.provider.MainProcessProviderProxy" android:exported="false" android:authorities="com.jihuanshe.pangle.provider.proxy.main"/>
+        <provider android:name="com.bytedance.pangle.FileProvider" android:exported="false" android:authorities="com.jihuanshe.pangle.fileprovider" android:grantUriPermissions="true"/>
+        <activity android:name="com.ss.android.downloadlib.addownload.compliance.AppPrivacyPolicyActivity" android:exported="false"/>
+        <activity android:name="com.ss.android.downloadlib.addownload.compliance.AppDetailInfoActivity" android:exported="false"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.ss.android.downloadlib.activity.TTDelegateActivity" android:exported="false" android:launchMode="singleTask"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.ss.android.downloadlib.activity.JumpKllkActivity" android:exported="false" android:launchMode="singleTask"/>
+        <receiver android:name="com.ss.android.downloadlib.core.download.DownloadReceiver" android:exported="false"/>
+        <service android:name="com.ss.android.socialbase.appdownloader.DownloadHandlerService" android:exported="false"/>
+        <activity android:theme="@android:style/Theme.Dialog" android:name="com.ss.android.socialbase.appdownloader.view.DownloadTaskDeleteActivity" android:exported="false" android:launchMode="singleTask"/>
+        <activity android:theme="@android:style/Theme.Dialog" android:name="com.ss.android.socialbase.appdownloader.view.JumpUnknownSourceActivity" android:exported="false" android:launchMode="singleTask"/>
+        <service android:name="com.ss.android.socialbase.appdownloader.RetryJobSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false"/>
+        <service android:name="com.ss.android.socialbase.downloader.downloader.IndependentProcessDownloadService" android:exported="false" android:process=":downloader">
+            <intent-filter>
+                <action android:name="com.ss.android.socialbase.downloader.remote"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.ss.android.socialbase.downloader.notification.DownloadNotificationService" android:exported="false"/>
+        <service android:name="com.ss.android.socialbase.downloader.downloader.DownloadService" android:exported="false"/>
+        <service android:name="com.ss.android.socialbase.downloader.impls.DownloadHandleService" android:exported="false"/>
+        <service android:name="com.ss.android.socialbase.downloader.downloader.SqlDownloadCacheService" android:exported="false"/>
+        <activity android:theme="@android:style/Theme.Light.NoTitleBar" android:name="com.qq.e.ads.RewardvideoPortraitADActivity" android:multiprocess="true" android:configChanges="screenSize|orientation|keyboardHidden|keyboard">
+            <meta-data android:name="android.notch_support" android:value="true"/>
+        </activity>
+        <activity android:theme="@android:style/Theme.Light.NoTitleBar" android:name="com.qq.e.ads.RewardvideoLandscapeADActivity" android:multiprocess="true" android:screenOrientation="landscape" android:configChanges="screenSize|orientation|keyboardHidden|keyboard">
+            <meta-data android:name="android.notch_support" android:value="true"/>
+        </activity>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" android:name="com.qq.e.ads.DialogActivity" android:multiprocess="true"/>
+        <provider android:name="com.baidu.mobads.sdk.api.BdFileProvider" android:exported="false" android:authorities="com.jihuanshe.bd.provider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/bd_file_paths"/>
+        </provider>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="com.baidu.mobads.sdk.api.AppActivity" android:configChanges="screenSize|orientation|keyboardHidden|keyboard"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.baidu.mobads.sdk.api.MobRewardVideoActivity" android:launchMode="singleTask" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.baidu.mobads.sdk.api.BdShellActivity" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <receiver android:name="cn.thinkingdata.android.TDReceiver" android:enabled="false" android:exported="false"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.tencent.android.tpush.TpnsActivity" android:exported="true" android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="com.jihuanshe.OPEN_TPNS_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="tpns" android:host="com.jihuanshe"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.tencent.android.tpush.InnerTpnsActivity" android:exported="false" android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="com.jihuanshe.OPEN_TPNS_ACTIVITY_V2"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="stpns" android:host="com.jihuanshe"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.tencent.android.tpush.inappmessage.InAppMessageActivity"/>
+        <receiver android:name="com.tencent.android.tpush.XGPushReceiver" android:exported="false" android:process=":xg_vip_service">
+            <intent-filter android:priority="0x7fffffff">
+                <action android:name="com.tencent.android.xg.vip.action.SDK"/>
+                <action android:name="com.tencent.android.xg.vip.action.INTERNAL_PUSH_MESSAGE"/>
+                <action android:name="com.tencent.android.xg.vip.action.ACTION_SDK_KEEPALIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.tencent.android.tpush.service.XGVipPushService" android:persistent="true" android:exported="false" android:process=":xg_vip_service"/>
+        <service android:name="com.tencent.android.tpush.rpc.XGRemoteService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.jihuanshe.XGVIP_PUSH_ACTION"/>
+            </intent-filter>
+        </service>
+        <provider android:name="com.tencent.android.tpush.XGPushProvider" android:exported="false" android:authorities="com.jihuanshe.XGVIP_PUSH_AUTH"/>
+        <provider android:name="com.tencent.android.tpush.SettingsContentProvider" android:exported="false" android:authorities="com.jihuanshe.TPUSH_PROVIDER"/>
+        <provider android:name="com.tencent.android.tpush.XGVipPushKAProvider" android:exported="false" android:authorities="com.jihuanshe.AUTH_XGPUSH_KEEPALIVE"/>
+        <service android:name="com.tencent.tpns.mqttchannel.services.MqttService" android:exported="false" android:process=":xg_vip_service"/>
+        <provider android:name="com.tencent.tpns.baseapi.base.SettingsContentProvider" android:exported="false" android:authorities="com.jihuanshe.XG_SETTINGS_PROVIDER"/>
+        <service android:name="com.tencent.android.fcm.XGFcmListenerService" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.google.firebase.messaging.FirebaseMessagingService" android:exported="false">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.xiaomi.mipush.sdk.NotificationClickedActivity" android:enabled="true" android:exported="true" android:launchMode="singleInstance"/>
+        <receiver android:name="com.tencent.android.mipush.XMPushMessageReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.meizu.cloud.pushsdk.NotificationService" android:exported="true"/>
+        <receiver android:name="com.meizu.cloud.pushsdk.MzPushSystemReceiver" android:permission="com.meizu.flyme.permission.PUSH" android:exported="false">
+            <intent-filter>
+                <action android:name="com.meizu.flyme.push.intent.PUSH_SYSTEM"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.tencent.android.mzpush.MZPushMessageReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.meizu.flyme.push.intent.MESSAGE"/>
+                <action android:name="com.meizu.flyme.push.intent.REGISTER.FEEDBACK"/>
+                <action android:name="com.meizu.flyme.push.intent.UNREGISTER.FEEDBACK"/>
+                <action android:name="com.meizu.c2dm.intent.REGISTRATION"/>
+                <action android:name="com.meizu.c2dm.intent.RECEIVE"/>
+                <category android:name="com.jihuanshe"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.tencent.android.vivopush.VivoPushMessageReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.vivo.pushclient.action.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="sdk_version_vivo" android:value="483"/>
+        <meta-data android:name="local_iv" android:value="MzMsMzQsMzUsMzYsMzcsMzgsMzksNDAsNDEsMzIsMzgsMzcsMzYsMzUsMzQsMzMsI0AzNCwzMiwzMywzNywzMywzNCwzMiwzMywzMywzMywzNCw0MSwzNSwzNSwzMiwzMiwjQDMzLDM0LDM1LDM2LDM3LDM4LDM5LDQwLDQxLDMyLDM4LDM3LDMzLDM1LDM0LDMzLCNAMzQsMzIsMzMsMzcsMzMsMzQsMzIsMzMsMzMsMzMsMzQsNDEsMzUsMzIsMzIsMzI"/>
+        <meta-data android:name="com.vivo.push.api_key" android:value="0dd01eaaa1bf9979845178a363672a71"/>
+        <meta-data android:name="com.vivo.push.app_id" android:value="105571887"/>
+        <service android:name="com.huawei.android.hms.tpns.HWHmsMessageService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.huawei.push.action.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.huawei.hms.support.api.push.PushMsgReceiver" android:permission="com.jihuanshe.permission.PROCESS_PUSH_MSG" android:exported="true" android:directBootAware="true">
+            <intent-filter>
+                <action android:name="com.huawei.intent.action.PUSH_DELAY_NOTIFY"/>
+                <action android:name="com.huawei.intent.action.PUSH"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.huawei.hms.support.api.push.PushReceiver" android:permission="com.jihuanshe.permission.PROCESS_PUSH_MSG" android:exported="true" android:directBootAware="true">
+            <intent-filter>
+                <action android:name="com.huawei.android.push.intent.REGISTRATION"/>
+                <action android:name="com.huawei.android.push.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.huawei.hms.support.api.push.service.HmsMsgService" android:enabled="true" android:exported="true" android:process=":pushservice" android:directBootAware="true">
+            <intent-filter>
+                <action android:name="com.huawei.push.msg.NOTIFY_MSG"/>
+                <action android:name="com.huawei.push.msg.PASSBY_MSG"/>
+            </intent-filter>
+        </service>
+        <provider android:name="com.huawei.hms.support.api.push.PushProvider" android:readPermission="com.jihuanshe.permission.PUSH_PROVIDER" android:writePermission="com.jihuanshe.permission.PUSH_WRITE_PROVIDER" android:exported="true" android:authorities="com.jihuanshe.huawei.push.provider"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:push" android:value="push:6.5.0.300"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:push:push" android:value="1"/>
+        <activity android:name="com.huawei.hms.support.api.push.TransActivity" android:exported="false"/>
+        <service android:name="com.google.firebase.components.ComponentDiscoveryService" android:exported="false">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:authorities="com.jihuanshe.firebaseinitprovider" android:initOrder="100"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <provider android:name="androidx.startup.InitializationProvider" android:exported="false" android:authorities="com.jihuanshe.androidx-startup">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:name="androidx.room.MultiInstanceInvalidationService" android:exported="false" android:directBootAware="true"/>
+        <provider android:name="com.huawei.hms.aaid.InitProvider" android:exported="false" android:authorities="com.jihuanshe.aaidinitprovider" android:initOrder="500"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:opendevice" android:value="opendevice:6.3.0.305"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:opendevice:push" android:value="1"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:base" android:value="base:6.5.0.300"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:base:hmscore" android:value="1"/>
+        <meta-data android:name="availableLoaded" android:value="yes"/>
+        <activity android:theme="@style/Base_Translucent" android:name="com.huawei.hms.activity.BridgeActivity" android:exported="false" android:excludeFromRecents="true" android:screenOrientation="behind" android:configChanges="fontScale|layoutDirection|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|locale" android:hardwareAccelerated="true">
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui.Translucent"/>
+        </activity>
+        <activity android:name="com.huawei.hms.activity.EnableServiceActivity" android:exported="false" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden"/>
+        <provider android:name="com.huawei.agconnect.core.provider.AGConnectInitializeProvider" android:exported="false" android:authorities="com.jihuanshe.AGCInitializeProvider"/>
+        <service android:name="com.huawei.agconnect.core.ServiceDiscovery" android:exported="false"/>
+        <meta-data android:name="com.huawei.hms.client.appid" android:value="appid=105825369"/>
+    </application>
+</manifest>

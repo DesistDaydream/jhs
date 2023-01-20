@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:tag="layout/activity_follow_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/searchLayout" android:background="@drawable/bg_order_slidebar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:textSize="12sp" android:textColor="@color/black_333333" android:id="@+id/searchEt" android:tag="binding_1" android:background="@drawable/bg_filter_bar_2" android:layout_width="0dp" android:layout_height="30dp" android:layout_margin="6dp" android:singleLine="true" android:drawablePadding="10dp" android:layout_weight="1" android:imeOptions="actionSearch" android:drawableStart="@drawable/svg_search" android:paddingStart="7dp"/>
+        <TextView android:textSize="12sp" android:textColor="@color/black_333333" android:gravity="center" android:tag="binding_2" android:background="@drawable/bg_filter_bar_2" android:layout_width="57dp" android:layout_height="30dp" android:text="@string/common_search" android:layout_marginEnd="6dp"/>
+    </LinearLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.vector.view.scrollable.ListView android:id="@+id/listView" android:tag="binding_3" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <View style="@style/ShadowStyle"/>
+    </FrameLayout>
+</LinearLayout>

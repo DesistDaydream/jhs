@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/ll_background" android:background="@drawable/alert_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@+id/tv_title" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="15dp" android:layout_marginRight="15dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_alert" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <ImageView android:background="@color/dialog_line_bg" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="10dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="16sp" android:textColor="?attr/core_primary_color" android:gravity="center" android:id="@+id/btn_neg" android:background="@drawable/trans_bg" android:layout_width="wrap_content" android:layout_height="50dp" android:layout_weight="1" android:textAllCaps="false"/>
+        <ImageView android:id="@+id/img_line" android:background="@color/dialog_line_bg" android:layout_width="0.5dp" android:layout_height="50dp"/>
+        <Button android:textSize="16sp" android:textColor="?attr/core_primary_color" android:gravity="center" android:id="@+id/btn_pos" android:background="@drawable/trans_bg" android:layout_width="wrap_content" android:layout_height="50dp" android:layout_weight="1" android:textAllCaps="false"/>
+    </LinearLayout>
+</LinearLayout>

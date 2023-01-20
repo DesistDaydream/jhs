@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include android:id="@+id/include_time" layout="@layout/ykfsdk_ykf_chatitem_time"/>
+    <RelativeLayout android:id="@+id/chart_from_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="48dp" android:layout_marginBottom="10dp" android:layout_below="@+id/include_time" android:layout_alignParentLeft="true">
+        <com.m7.imkfsdk.view.RoundCornerImageView android:id="@+id/chatting_avatar_iv" android:background="@drawable/ykfsdk_bg_avatar" android:layout_width="46dp" android:layout_height="46dp" android:layout_marginLeft="8dp" android:src="@drawable/ykfsdk_kf_head_default_robot" android:scaleType="fitXY"/>
+        <TextView android:textSize="10sp" android:textColor="@color/ykfsdk_all_black" android:id="@+id/chatfrom_tv_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/ykfsdk_name" android:layout_toRightOf="@+id/chatting_avatar_iv"/>
+        <FrameLayout android:id="@+id/chat_from_layout_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/chatting_avatar_iv" android:layout_below="@+id/chatfrom_tv_name" android:layout_marginStart="6.23dp" android:layout_toEndOf="@+id/chatting_avatar_iv">
+            <com.m7.imkfsdk.view.RoundImageView android:id="@+id/chat_content_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true"/>
+        </FrameLayout>
+    </RelativeLayout>
+    <include layout="@layout/ykfsdk_layout_chat_withdraw"/>
+</RelativeLayout>

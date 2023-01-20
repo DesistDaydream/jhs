@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:tag="layout/pop_game_bar_0" android:background="@drawable/bg_game_drop_bar" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <androidx.recyclerview.widget.RecyclerView android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

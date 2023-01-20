@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="?attr/core_bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.tencent.qcloud.tuicore.component.TitleBarLayout android:id="@+id/group_receipt_title" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/msg_abstract_area" android:background="@color/white" android:paddingLeft="15.36dp" android:paddingRight="15.36dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0.96dp" android:layout_marginBottom="9.6dp" android:paddingStart="15.36dp">
+        <LinearLayout android:orientation="horizontal" android:paddingTop="11.52dp" android:paddingBottom="5.76dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center" android:id="@+id/name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="11.52dp" android:layout_marginEnd="11.52dp"/>
+            <TextView android:gravity="center" android:id="@+id/time_tv" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="11.52dp">
+            <ImageView android:id="@+id/msg_abstract_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter"/>
+            <TextView android:textSize="15.36sp" android:textColor="#111111" android:ellipsize="end" android:id="@+id/msg_abstract" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/read_details" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:paddingTop="11.52dp" android:paddingBottom="5.28dp" android:layout_width="match_parent" android:layout_height="46.08dp">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/read_title" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="15.36sp" android:textColor="?attr/core_primary_color" android:gravity="center" android:id="@+id/read_title_tv" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <View android:id="@+id/read_title_line" android:background="@drawable/group_msg_receipt_line_bg" android:layout_width="55.68dp" android:layout_height="2.4dp" android:layout_marginTop="3.84dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/unread_title" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="15.36sp" android:textColor="#444444" android:gravity="center" android:id="@+id/unread_title_tv" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <View android:id="@+id/unread_title_line" android:background="@drawable/group_msg_receipt_line_bg" android:visibility="invisible" android:layout_width="55.68dp" android:layout_height="2.4dp" android:layout_marginTop="3.84dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/read_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/unread_list" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

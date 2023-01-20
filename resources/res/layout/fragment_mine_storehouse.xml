@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:tag="layout/fragment_mine_storehouse_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_tab" android:background="@drawable/bg_tab_search" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="48dp">
+            <TextView android:textSize="13sp" android:textColor="@color/selector_check_tab_bg" android:gravity="center_vertical" android:id="@+id/tv_in" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginStart="20dp"/>
+            <TextView android:textSize="13sp" android:textColor="@color/selector_check_tab_bg" android:gravity="center_vertical" android:id="@+id/tv_not_pass" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginStart="20dp"/>
+            <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+            <ImageView android:layout_gravity="center_vertical" android:tag="binding_3" android:paddingTop="9dp" android:paddingBottom="9dp" android:layout_width="80dp" android:layout_height="48dp" android:src="@drawable/svg_search" app:tint="@color/black_b5b5b7"/>
+        </LinearLayout>
+        <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:id="@+id/tv_sold_all" android:tag="binding_4" android:background="@drawable/bg_tv_sold_all" android:paddingTop="7dp" android:paddingBottom="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="18dp" android:paddingStart="18dp" android:paddingEnd="18dp"/>
+    </LinearLayout>
+    <com.vector.view.scrollable.ListView android:id="@+id/listView" android:tag="binding_5" android:layout_width="match_parent" android:layout_height="0dp" android:overScrollMode="never" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/ll_tab"/>
+    <com.vector.view.scrollable.ListView android:id="@+id/listView_fail" android:tag="binding_6" android:layout_width="match_parent" android:layout_height="0dp" android:overScrollMode="never" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/ll_tab"/>
+    <com.vector.view.scrollable.ListView android:id="@+id/listView_sold" android:tag="binding_7" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/ll_tab"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

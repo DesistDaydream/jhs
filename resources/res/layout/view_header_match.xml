@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:tag="layout/view_header_match_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:background="@drawable/corner_white_20dp" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginTop="14dp" android:layout_marginBottom="7dp" android:paddingStart="20dp" android:paddingEnd="20dp">
+        <CheckBox android:textSize="12sp" android:textColor="@color/black" android:layout_gravity="center" android:tag="binding_1" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="忽略卡牌版本"/>
+    </FrameLayout>
+</FrameLayout>

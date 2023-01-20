@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:gravity="center" android:id="@+id/scrollable_footer_tv_reload_more" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/scrollable_extend_height" android:text="@string/network_click_retry"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/scrollable_footer_layout_loading" android:layout_width="match_parent" android:layout_height="@dimen/scrollable_extend_height">
+        <com.vector.view.ProgressView android:id="@+id/scrollable_footer_progress_view" android:layout_width="@dimen/scrollable_extend_loading_size" android:layout_height="@dimen/scrollable_extend_loading_size" android:src="@drawable/ic_loading"/>
+        <TextView android:textSize="@dimen/scrollable_extend_text" android:textColor="@color/text_scrollable_header" android:id="@+id/scrollable_footer_tv_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/sr_list_header_hint_loading" android:layout_marginStart="8dp"/>
+    </LinearLayout>
+</RelativeLayout>

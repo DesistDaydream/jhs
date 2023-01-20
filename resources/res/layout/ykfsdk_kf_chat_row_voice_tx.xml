@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <include android:id="@+id/include_time" layout="@layout/ykfsdk_ykf_chatitem_time"/>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:layout_below="@+id/include_time">
+        <RelativeLayout android:id="@+id/chart_to_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="48dp" android:layout_marginBottom="10dp" android:layout_alignParentRight="true">
+            <ImageView android:id="@+id/chatting_avatar_iv" android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/ykfsdk_kf_head_default_local" android:scaleType="fitXY" android:layout_alignParentRight="true"/>
+            <FrameLayout android:id="@+id/chatto_content_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4dp" android:layout_toLeftOf="@+id/chatting_avatar_iv" android:layout_centerVertical="true">
+                <TextView android:layout_gravity="center_vertical" android:id="@+id/chatting_voice_play_anim_tv" android:background="@drawable/ykfsdk_ykf_send_msg_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="60dp" android:minHeight="42dp" android:drawableRight="@drawable/ykfsdk_kf_chatto_voice_playing"/>
+                <com.m7.imkfsdk.view.VoiceAnimImageView android:layout_gravity="center_vertical" android:id="@+id/chatting_voice_anim" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="36dp"/>
+            </FrameLayout>
+            <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2dp" android:layout_marginBottom="-4dp" android:layout_toLeftOf="@+id/chatto_content_layout" android:layout_alignBottom="@+id/chatto_content_layout" layout="@layout/ykfsdk_ykf_read_unreadtext"/>
+            <TextView android:id="@+id/chatting_content_itv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/chatto_content_layout" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/chatting_state_iv" android:background="@drawable/ykfsdk_kf_chat_failure_msgs" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="4dp" android:layout_toLeftOf="@+id/chatto_content_layout" android:layout_centerVertical="true"/>
+            <ProgressBar android:id="@+id/uploading_pb" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="4dp" android:indeterminateDrawable="@drawable/ykfsdk_progressbar_color" android:layout_toLeftOf="@+id/chatto_content_layout" android:layout_centerVertical="true"/>
+            <TextView android:textSize="12sp" android:gravity="center" android:id="@+id/chatting_voice_second_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4dp" android:layout_toLeftOf="@+id/uploading_pb" android:layout_alignTop="@+id/chatto_content_layout"/>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_voiceTotext" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="58dp" android:layout_marginTop="-6dp" android:layout_marginRight="50dp" android:layout_below="@+id/chart_to_container" android:layout_alignParentRight="true">
+            <include layout="@layout/ykfsdk_lay_voice_to_text"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

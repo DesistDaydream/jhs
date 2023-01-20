@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/selector_face_text" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/face_group_tab_icon" android:clickable="false" android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/emoji_default" android:scaleType="fitXY" android:layout_centerInParent="true"/>
+</RelativeLayout>

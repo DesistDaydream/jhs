@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:height="125.701dp" android:width="110.656dp" android:viewportWidth="110.656" android:viewportHeight="125.701">
+    <group>
+        <clip-path android:pathData="M23.296,0L87.36,0a23.268,23.268 0,0 1,23.3 23.283v52.968c0,12.875 -8.929,28.637 -19.976,35.262l-15.376,9.22c-11.047,6.624 -28.905,6.624 -39.952,0l-15.376,-9.22c-11.047,-6.624 -19.976,-22.386 -19.976,-35.262L0.004,23.283A23.268,23.268 0,0 1,23.296 0Z"/>
+        <path android:fillColor="@drawable/res_0x7f080023_svg_entrepot_error__0" android:pathData="M23,0h64c12.883,0 24,10.125 24,23v53c0,12.875 -8.953,29.376 -20,36l-16,9c-11.047,6.624 -28.953,6.624 -40,0l-15,-9c-11.047,-6.624 -20,-23.125 -20,-36L0,23A22.778,22.778 0,0 1,23 0Z"/>
+    </group>
+    <path android:fillColor="#fff" android:pathData="M55.174,85.506l-0,-0A6.168,6.168 0,1 1,61.342 79.338,6.17 6.17,0 0,1 55.174,85.506"/>
+    <path android:fillColor="#fff" android:pathData="M55.174,67.006l-0,-0a6.17,6.17 0,0 1,-6.168 -6.168L49.006,41.166A6.168,6.168 0,0 1,61.342 41.166L61.342,60.838A6.17,6.17 0,0 1,55.174 67.006"/>
+</vector>

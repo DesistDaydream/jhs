@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/chat_background_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.tencent.qcloud.tuicore.component.TitleBarLayout android:id="@+id/chat_title_bar" android:layout_width="match_parent" android:layout_height="@dimen/page_title_height"/>
+    <View android:id="@+id/view_line" android:background="@color/chat_title_line_color" android:layout_width="match_parent" android:layout_height="0.3dp" android:layout_below="@+id/chat_title_bar"/>
+    <com.tencent.qcloud.tuikit.tuichat.ui.view.message.MessageRecyclerView android:id="@+id/chat_message_layout" android:clickable="false" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_below="@+id/view_line"/>
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:tag="layout/dialog_back_goods_0" android:background="@drawable/bg_white_top_corner" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/goodsView" android:paddingLeft="20dp" android:paddingTop="7dp" android:paddingRight="20dp" android:paddingBottom="7dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:paddingHorizontal="20dp" android:paddingVertical="7dp" app:layout_constraintTop_toTopOf="0">
+        <TextView android:textSize="12sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="货物状态"/>
+        <RadioGroup android:orientation="horizontal" android:id="@+id/returnType" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="10dp">
+            <RadioButton android:textSize="12sp" android:textColor="@color/black" android:id="@+id/rb1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="未收到货"/>
+            <RadioButton android:textSize="12sp" android:textColor="@color/black" android:id="@+id/rb2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已收到货"/>
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/refundView" android:paddingLeft="20dp" android:paddingTop="7dp" android:paddingRight="20dp" android:paddingBottom="7dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:paddingHorizontal="20dp" android:paddingVertical="7dp" app:layout_constraintTop_toBottomOf="@+id/goodsView">
+        <TextView android:textSize="12sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="退款方式"/>
+        <RadioGroup android:orientation="horizontal" android:id="@+id/refundType" android:tag="binding_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="10dp">
+            <RadioButton android:textSize="12sp" android:textColor="@color/black" android:id="@+id/refundBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="仅退款"/>
+            <RadioButton android:enabled="false" android:textSize="12sp" android:textColor="@color/selector_rb" android:id="@+id/reAllBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="退货退款" android:buttonTint="@color/black_99999a"/>
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/infoView" android:background="@color/white" android:paddingLeft="20dp" android:paddingTop="7dp" android:paddingRight="20dp" android:paddingBottom="7dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:paddingHorizontal="20dp" android:paddingVertical="7dp" app:layout_constraintTop_toBottomOf="@+id/refundView">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="退款原因"/>
+            <TextView android:textSize="12sp" android:textColor="@color/black" android:id="@+id/reasonTv" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请选择" android:drawableEnd="@drawable/ic_down" android:layout_marginStart="10dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+            <TextView android:textSize="12sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="退款金额"/>
+            <TextView android:textSize="12sp" android:textColor="#ff0000" android:id="@+id/moneyTv" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/white" android:layout_width="295dp" android:layout_height="97dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/infoView">
+        <TextView android:textSize="12sp" android:textColor="@color/white" android:gravity="center" android:tag="binding_5" android:background="@drawable/bg_black_left_corner" android:layout_width="0dp" android:layout_height="@dimen/bottom_btn_height" android:text="@string/common_cancel" android:layout_weight="125"/>
+        <TextView android:textSize="12sp" android:textColor="@color/white" android:gravity="center" android:tag="binding_6" android:background="@drawable/bg_shop_car_right" android:layout_width="0dp" android:layout_height="@dimen/bottom_btn_height" android:text="@string/common_commit_apply" android:layout_weight="170"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
